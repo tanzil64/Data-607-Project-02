@@ -1,0 +1,774 @@
+"","index","Job.Title","Salary.Estimate","Rating","Company.Name","Location","Headquarters","Size","Founded","Type.of.ownership","Industry","Sector","Revenue","Competitors"
+"1",1,"Data Scientist","$137K-$171K (Glassdoor est.)",4.2,"ManTech
+4.2","Chantilly, VA","Herndon, VA","5001 to 10000 employees",1968,"Company - Public","Research & Development","Business Services","$1 to $2 billion (USD)","-1"
+"2",2,"Data Scientist","$137K-$171K (Glassdoor est.)",3.8,"Analysis Group
+3.8","Boston, MA","Boston, MA","1001 to 5000 employees",1981,"Private Practice / Firm","Consulting","Business Services","$100 to $500 million (USD)","-1"
+"3",3,"Data Scientist","$137K-$171K (Glassdoor est.)",3.5,"INFICON
+3.5","Newton, MA","Bad Ragaz, Switzerland","501 to 1000 employees",2000,"Company - Public","Electrical & Electronic Manufacturing","Manufacturing","$100 to $500 million (USD)","MKS Instruments, Pfeiffer Vacuum, Agilent Technologies"
+"4",4,"Data Scientist","$137K-$171K (Glassdoor est.)",2.9,"Affinity Solutions
+2.9","New York, NY","New York, NY","51 to 200 employees",1998,"Company - Private","Advertising & Marketing","Business Services","Unknown / Non-Applicable","Commerce Signals, Cardlytics, Yodlee"
+"5",5,"Data Scientist","$137K-$171K (Glassdoor est.)",4.2,"HG Insights
+4.2","Santa Barbara, CA","Santa Barbara, CA","51 to 200 employees",2010,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"6",7,"Data Scientist","$137K-$171K (Glassdoor est.)",3.5,"iRobot
+3.5","Bedford, MA","Bedford, MA","1001 to 5000 employees",1990,"Company - Public","Consumer Electronics & Appliances Stores","Retail","$1 to $2 billion (USD)","-1"
+"7",9,"Data Scientist","$137K-$171K (Glassdoor est.)",3.6,"XSELL Technologies
+3.6","Chicago, IL","Chicago, IL","51 to 200 employees",2014,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"8",10,"Data Scientist","$137K-$171K (Glassdoor est.)",4.5,"Novetta
+4.5","Herndon, VA","Mc Lean, VA","501 to 1000 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$100 to $500 million (USD)","Leidos, CACI International, Booz Allen Hamilton"
+"9",11,"Data Scientist","$137K-$171K (Glassdoor est.)",4.7,"1904labs
+4.7","Saint Louis, MO","Saint Louis, MO","51 to 200 employees",2016,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","Slalom, Daugherty Business Solutions"
+"10",14,"Data Scientist","$137K-$171K (Glassdoor est.)",3.4,"Mathematica Policy Research
+3.4","Washington, DC","Princeton, NJ","1001 to 5000 employees",1986,"Company - Private","Consulting","Business Services","$100 to $500 million (USD)","-1"
+"11",17,"Data Scientist","$137K-$171K (Glassdoor est.)",3.5,"Buckman
+3.5","Memphis, TN","Memphis, TN","1001 to 5000 employees",1945,"Company - Private","Chemical Manufacturing","Manufacturing","$500 million to $1 billion (USD)","-1"
+"12",20,"Data Scientist","$137K-$171K (Glassdoor est.)",3.2,"Triplebyte
+3.2","New York, NY","San Francisco, CA","51 to 200 employees",2015,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"13",24,"Data Scientist","$137K-$171K (Glassdoor est.)",3.4,"Spectrum Communications and Consulting
+3.4","Chicago, IL","Chicago, IL","51 to 200 employees",1992,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","-1"
+"14",25,"Data Scientist","$137K-$171K (Glassdoor est.)",4.7,"Oversight Systems
+4.7","Atlanta, GA","Atlanta, GA","51 to 200 employees",2003,"Company - Private","Computer Hardware & Software","Information Technology","$25 to $50 million (USD)","-1"
+"15",28,"Data Scientist","$137K-$171K (Glassdoor est.)",4.5,"Kingfisher Systems
+4.5","McLean, VA","Falls Church, VA","51 to 200 employees",2005,"Company - Private","Federal Agencies","Government","$25 to $50 million (USD)","-1"
+"16",29,"Data Scientist","$137K-$171K (Glassdoor est.)",2.8,"Formation
+2.8","San Francisco, CA","San Francisco, CA","51 to 200 employees",2015,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"17",30,"Data Scientist","$75K-$131K (Glassdoor est.)",3.8,"Analysis Group
+3.8","Boston, MA","Boston, MA","1001 to 5000 employees",1981,"Private Practice / Firm","Consulting","Business Services","$100 to $500 million (USD)","-1"
+"18",32,"Data Scientist","$75K-$131K (Glassdoor est.)",5,"Cohere Health
+5.0","Boston, MA","Boston, MA","1 to 50 employees",2019,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"19",34,"Data Engineer","$75K-$131K (Glassdoor est.)",3.6,"Chef
+3.6","United States","Seattle, WA","201 to 500 employees",2008,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$50 to $100 million (USD)","Puppet, Ansible, SaltStack"
+"20",37,"Data Scientist","$75K-$131K (Glassdoor est.)",2.7,"A Place for Mom
+2.7","Overland Park, KS","New York, NY","501 to 1000 employees",2000,"Company - Private","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","Enlivant, Sunrise Senior Living, Brookdale Senior Living"
+"21",38,"Data Scientist","$75K-$131K (Glassdoor est.)",2.2,"Great-Circle Technologies
+2.2","Chantilly, VA","Chantilly, VA","1 to 50 employees",2000,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$1 to $5 million (USD)","-1"
+"22",40,"Data Analyst","$75K-$131K (Glassdoor est.)",3.1,"Cambridge Associates, LLC
+3.1","Boston, MA","Boston, MA","501 to 1000 employees",1973,"Company - Private","Investment Banking & Asset Management","Finance","$100 to $500 million (USD)","-1"
+"23",41,"Machine Learning Engineer","$75K-$131K (Glassdoor est.)",3.4,"Liberty Mutual Insurance
+3.4","Portsmouth, NH","Boston, MA","10000+ employees",1912,"Company - Private","Insurance Carriers","Insurance","$10+ billion (USD)","Travelers, Allstate, State Farm"
+"24",44,"Data Scientist","$75K-$131K (Glassdoor est.)",4.2,"Eversight
+4.2","Palo Alto, CA","Palo Alto, CA","51 to 200 employees",2013,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$10 to $25 million (USD)","-1"
+"25",46,"Senior Data Scientist","$75K-$131K (Glassdoor est.)",4.8,"Klaviyo
+4.8","Boston, MA","Boston, MA","201 to 500 employees",2012,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"26",47,"Data Scientist","$75K-$131K (Glassdoor est.)",3.3,"Intellectual Ventures
+3.3","Bellevue, WA","Bellevue, WA","501 to 1000 employees",2000,"Company - Private","Investment Banking & Asset Management","Finance","Unknown / Non-Applicable","-1"
+"27",48,"Data Scientist","$75K-$131K (Glassdoor est.)",3.7,"GovTech
+3.7","San Francisco, CA","Singapore, Singapore","1001 to 5000 employees",2016,"Government","Federal Agencies","Government","Unknown / Non-Applicable","-1"
+"28",49,"Data Scientist","$75K-$131K (Glassdoor est.)",4.3,"Quick Base
+4.3","Cambridge, MA","Cambridge, MA","201 to 500 employees",1999,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"29",50,"Data Analyst","$75K-$131K (Glassdoor est.)",4.8,"Giving Assistant
+4.8","San Francisco, CA","San Francisco, CA","1 to 50 employees",2014,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","-1"
+"30",51,"Data Scientist","$75K-$131K (Glassdoor est.)",3.7,"Takeda
+3.7","Cambridge, MA","OSAKA, Japan","10000+ employees",1781,"Company - Public","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10+ billion (USD)","Novartis, Baxter, Pfizer"
+"31",52,"Data Scientist","$75K-$131K (Glassdoor est.)",4,"Netskope
+4.0","San Francisco, CA","Santa Clara, CA","501 to 1000 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","Skyhigh Networks, Zscaler, NortonLifeLock"
+"32",56,"Senior Data Scientist","$75K-$131K (Glassdoor est.)",3.5,"Benson Hill
+3.5","Saint Louis, MO","Saint Louis, MO","201 to 500 employees",2012,"Company - Private","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$1 to $5 million (USD)","-1"
+"33",58,"Data Scientist","$75K-$131K (Glassdoor est.)",3.2,"Postmates - Corporate HQ
+3.2","San Francisco, CA","San Francisco, CA","1001 to 5000 employees",2011,"Company - Private","Express Delivery Services","Transportation & Logistics","Unknown / Non-Applicable","DoorDash, Uber, Grubhub"
+"34",60,"Data Analyst","$75K-$131K (Glassdoor est.)",3.8,"Swiss Re
+3.8","Fort Wayne, IN","Zurich, Switzerland","10000+ employees",1863,"Company - Public","Insurance Agencies & Brokerages","Insurance","$10+ billion (USD)","Munich Re, Hannover RE, SCOR"
+"35",61,"Machine Learning Engineer","$75K-$131K (Glassdoor est.)",4.5,"Systems & Technology Research
+4.5","Woburn, MA","Woburn, MA","201 to 500 employees",2010,"Company - Private","Aerospace & Defense","Aerospace & Defense","$100 to $500 million (USD)","-1"
+"36",62,"Data Scientist","$79K-$131K (Glassdoor est.)",3.5,"iRobot
+3.5","Bedford, MA","Bedford, MA","1001 to 5000 employees",1990,"Company - Public","Consumer Electronics & Appliances Stores","Retail","$1 to $2 billion (USD)","-1"
+"37",63,"Data Scientist","$79K-$131K (Glassdoor est.)",4.2,"HG Insights
+4.2","Santa Barbara, CA","Santa Barbara, CA","51 to 200 employees",2010,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"38",65,"Data Engineer","$79K-$131K (Glassdoor est.)",3.7,"Bayview Asset Management
+3.7","Coral Gables, FL","Coral Gables, FL","1001 to 5000 employees",1995,"Company - Private","Investment Banking & Asset Management","Finance","$100 to $500 million (USD)","-1"
+"39",66,"Data Scientist","$79K-$131K (Glassdoor est.)",3.7,"Via Transportation
+3.7","New York, NY","New York, NY","501 to 1000 employees",2012,"Company - Private","Internet","Information Technology","Unknown / Non-Applicable","-1"
+"40",67,"Data Scientist","$79K-$131K (Glassdoor est.)",4,"Grid Dynamics
+4.0","Santa Clara, CA","San Ramon, CA","1001 to 5000 employees",2006,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$50 to $100 million (USD)","Luxoft, EPAM, Capgemini Invent"
+"41",75,"Data Analyst","$79K-$131K (Glassdoor est.)",3.4,"Allied Solutions
+3.4","Carmel, IN","Carmel, IN","1001 to 5000 employees",2001,"Subsidiary or Business Segment","Insurance Agencies & Brokerages","Insurance","$100 to $500 million (USD)","CUNA Mutual, SWBC, Overby-Seawell"
+"42",77,"Data Scientist","$79K-$131K (Glassdoor est.)",3.5,"The Knot Worldwide
+3.5","Washington, DC","Chevy Chase, MD","1001 to 5000 employees",2019,"Company - Private","Internet","Information Technology","Unknown / Non-Applicable","Zola Registry"
+"43",78,"Data Scientist","$79K-$131K (Glassdoor est.)",2.9,"IFG Companies
+2.9","New York, NY","Hartford, CT","201 to 500 employees",1985,"Company - Private","Insurance Carriers","Insurance","Unknown / Non-Applicable","Colony Specialty, Markel, RLI"
+"44",81,"Data Scientist","$79K-$131K (Glassdoor est.)",3.6,"Powertek
+3.6","Washington, DC","Rockville, MD","51 to 200 employees",2001,"Company - Private","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"45",82,"Data Engineer","$79K-$131K (Glassdoor est.)",4.7,"Object Partners
+4.7","Saint Louis, MO","Minneapolis, MN","51 to 200 employees",1996,"Company - Private","Consulting","Business Services","$25 to $50 million (USD)","Solution Design Group, Intertech (Minnesota)"
+"46",84,"Data Scientist","$79K-$131K (Glassdoor est.)",4.3,"Lightspeed Systems
+4.3","Austin, TX","Austin, TX","51 to 200 employees",1999,"Company - Private","Computer Hardware & Software","Information Technology","$25 to $50 million (USD)","-1"
+"47",86,"Data Analyst","$79K-$131K (Glassdoor est.)",2.6,"Comprehensive Healthcare
+2.6","Yakima, WA","Yakima, WA","501 to 1000 employees",1971,"Nonprofit Organization","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","-1"
+"48",88,"Machine Learning Engineer","$79K-$131K (Glassdoor est.)",4.8,"Klaviyo
+4.8","Boston, MA","Boston, MA","201 to 500 employees",2012,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"49",89,"Data Scientist","$79K-$131K (Glassdoor est.)",3.9,"Mars
+3.9","United States","Mc Lean, VA","10000+ employees",1911,"Company - Private","Food & Beverage Manufacturing","Manufacturing","$10+ billion (USD)","-1"
+"50",91,"Machine Learning Engineer","$79K-$131K (Glassdoor est.)",4.4,"NuWave Solutions
+4.4","Springfield, VA","Mc Lean, VA","51 to 200 employees",1999,"Company - Private","IT Services","Information Technology","$5 to $10 million (USD)","-1"
+"51",92,"Senior Data Scientist","$79K-$131K (Glassdoor est.)",4.2,"ManTech
+4.2","Alexandria, VA","Herndon, VA","5001 to 10000 employees",1968,"Company - Public","Research & Development","Business Services","$1 to $2 billion (USD)","-1"
+"52",94,"Data Scientist","$99K-$132K (Glassdoor est.)",3.4,"Mathematica Policy Research
+3.4","Washington, DC","Princeton, NJ","1001 to 5000 employees",1986,"Company - Private","Consulting","Business Services","$100 to $500 million (USD)","-1"
+"53",98,"Senior Data Scientist","$99K-$132K (Glassdoor est.)",3.8,"GutCheck
+3.8","Denver, CO","Denver, CO","51 to 200 employees",2009,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","Nielsen, Zappi, SurveyMonkey"
+"54",100,"Data Scientist","$99K-$132K (Glassdoor est.)",4.9,"Avlino
+4.9","New Jersey","Holmdel, NJ","1 to 50 employees",2013,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Less than $1 million (USD)","-1"
+"55",101,"Machine Learning Engineer","$99K-$132K (Glassdoor est.)",4.4,"Stratagem Group
+4.4","Aurora, CO","Aurora, CO","1 to 50 employees",2007,"Company - Private","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"56",103,"Senior Data Scientist","$99K-$132K (Glassdoor est.)",4,"Autodesk
+4.0","San Francisco, CA","San Rafael, CA","5001 to 10000 employees",1982,"Company - Public","Computer Hardware & Software","Information Technology","$2 to $5 billion (USD)","-1"
+"57",105,"Data Scientist","$99K-$132K (Glassdoor est.)",3.8,"Tecolote Research
+3.8","Hill AFB, UT","Goleta, CA","501 to 1000 employees",1973,"Company - Private","Aerospace & Defense","Aerospace & Defense","$50 to $100 million (USD)","-1"
+"58",107,"Data Engineer","$99K-$132K (Glassdoor est.)",2.9,"hc1
+2.9","Indianapolis, IN","Indianapolis, IN","51 to 200 employees",2011,"Company - Private","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10 to $25 million (USD)","-1"
+"59",109,"Data Scientist","$99K-$132K (Glassdoor est.)",3.7,"SAIC
+3.7","Chantilly, VA","Reston, VA","10000+ employees",2013,"Company - Public","Enterprise Software & Network Solutions","Information Technology","$5 to $10 million (USD)","Booz Allen Hamilton, CACI International"
+"60",111,"Data Analyst","$99K-$132K (Glassdoor est.)",4.9,"Big Huge Games
+4.9","Timonium, MD","Lutherville Timonium, MD","51 to 200 employees",2013,"Subsidiary or Business Segment","Video Games","Media","Unknown / Non-Applicable","-1"
+"61",113,"Data Engineer","$99K-$132K (Glassdoor est.)",5,"Phantom AI
+5.0","Burlingame, CA","Burlingame, CA","1 to 50 employees",2016,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"62",114,"Data Scientist","$99K-$132K (Glassdoor est.)",4,"Noblis
+4.0","Reston, VA","Reston, VA","1001 to 5000 employees",1996,"Nonprofit Organization","Consulting","Business Services","$100 to $500 million (USD)","Booz Allen Hamilton, SAIC, LMI"
+"63",115,"Data Scientist","$99K-$132K (Glassdoor est.)",3.6,"Spring Health
+3.6","New York, NY","New York, NY","1 to 50 employees",2016,"Company - Private","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","-1"
+"64",119,"Data Engineer","$99K-$132K (Glassdoor est.)",4.8,"GetWellNetwork
+4.8","Bethesda, MD","Bethesda, MD","201 to 500 employees",2000,"Company - Private","Health Care Services & Hospitals","Health Care","$50 to $100 million (USD)","Epic, CipherHealth"
+"65",120,"Data Scientist","$99K-$132K (Glassdoor est.)",4.5,"TACG Solutions
+4.5","Dayton, OH","Beavercreek, OH","51 to 200 employees",2006,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","Copper River Shared Services, Chenega Corporation, Deloitte"
+"66",122,"Senior Data Scientist","$99K-$132K (Glassdoor est.)",4.5,"Novetta
+4.5","Herndon, VA","Mc Lean, VA","501 to 1000 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$100 to $500 million (USD)","Leidos, CACI International, Booz Allen Hamilton"
+"67",123,"Data Engineer","$99K-$132K (Glassdoor est.)",4.2,"IZEA
+4.2","Winter Park, FL","Winter Park, FL","51 to 200 employees",2006,"Company - Public","Advertising & Marketing","Business Services","$25 to $50 million (USD)","Linqia, Collective Bias"
+"68",126,"Data Scientist","$90K-$109K (Glassdoor est.)",4.7,"1904labs
+4.7","Saint Louis, MO","Saint Louis, MO","51 to 200 employees",2016,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","Slalom, Daugherty Business Solutions"
+"69",127,"Data Scientist","$90K-$109K (Glassdoor est.)",3.6,"XSELL Technologies
+3.6","Chicago, IL","Chicago, IL","51 to 200 employees",2014,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"70",128,"Data Engineer","$90K-$109K (Glassdoor est.)",4.2,"IZEA
+4.2","Winter Park, FL","Winter Park, FL","51 to 200 employees",2006,"Company - Public","Advertising & Marketing","Business Services","$25 to $50 million (USD)","Linqia, Collective Bias"
+"71",130,"Data Scientist","$90K-$109K (Glassdoor est.)",5,"Notion Labs
+5.0","San Francisco, CA","San Francisco, CA","1 to 50 employees",2016,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"72",132,"Data Engineer","$90K-$109K (Glassdoor est.)",4.4,"Direct Agents
+4.4","Culver City, CA","New York, NY","51 to 200 employees",2003,"Company - Private","Advertising & Marketing","Business Services","$25 to $50 million (USD)","-1"
+"73",133,"Data Scientist","$90K-$109K (Glassdoor est.)",3.3,"NAVEX Global
+3.3","Lake Oswego, OR","Lake Oswego, OR","1001 to 5000 employees",2012,"Company - Private","Computer Hardware & Software","Information Technology","$100 to $500 million (USD)","-1"
+"74",134,"Machine Learning Engineer","$90K-$109K (Glassdoor est.)",3.2,"Triplebyte
+3.2","Remote","San Francisco, CA","51 to 200 employees",2015,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"75",135,"Machine Learning Engineer","$90K-$109K (Glassdoor est.)",3.2,"Triplebyte
+3.2","Remote","San Francisco, CA","51 to 200 employees",2015,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"76",137,"Data Scientist","$90K-$109K (Glassdoor est.)",4.2,"Upstart
+4.2","San Mateo, CA","San Mateo, CA","201 to 500 employees",2012,"Company - Private","Lending","Finance","Unknown / Non-Applicable","-1"
+"77",138,"Data Analyst","$90K-$109K (Glassdoor est.)",4.5,"Envision LLC
+4.5","San Francisco, CA","Saint Louis, MO","201 to 500 employees",1994,"Company - Private","Staffing & Outsourcing","Business Services","$25 to $50 million (USD)","-1"
+"78",139,"Data Engineer","$90K-$109K (Glassdoor est.)",4.8,"AppLovin
+4.8","Palo Alto, CA","Palo Alto, CA","201 to 500 employees",2012,"Company - Private","Video Games","Media","Unknown / Non-Applicable","-1"
+"79",142,"Senior Data Scientist","$90K-$109K (Glassdoor est.)",3.3,"Tempo Automation
+3.3","San Francisco, CA","San Francisco, CA","51 to 200 employees",2013,"Company - Private","Electrical & Electronic Manufacturing","Manufacturing","$5 to $10 million (USD)","-1"
+"80",144,"Machine Learning Engineer","$90K-$109K (Glassdoor est.)",5,"Expedition Technology, Inc.
+5.0","Herndon, VA","Dulles, VA","1 to 50 employees",2013,"Company - Private","Aerospace & Defense","Aerospace & Defense","$10 to $25 million (USD)","-1"
+"81",146,"Data Scientist","$90K-$109K (Glassdoor est.)",3.4,"Plymouth Rock Assurance
+3.4","Woodbridge, NJ","Boston, MA","1001 to 5000 employees",1982,"Company - Private","Insurance Carriers","Insurance","$10 to $25 million (USD)","Arbella Insurance, Safety Insurance"
+"82",148,"Data Scientist","$90K-$109K (Glassdoor est.)",2.9,"GNS Healthcare
+2.9","Cambridge, MA","Cambridge, MA","51 to 200 employees",2000,"Company - Private","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10 to $25 million (USD)","-1"
+"83",150,"Data Scientist","$90K-$109K (Glassdoor est.)",2.9,"SPECTRUM
+2.9","Maryland Heights, MO","Stamford, CT","10000+ employees",2016,"Subsidiary or Business Segment","Cable, Internet & Telephone Providers","Telecommunications","$10+ billion (USD)","-1"
+"84",152,"Data Engineer","$90K-$109K (Glassdoor est.)",4.2,"Procore Technologies
+4.2","Carpinteria, CA","Carpinteria, CA","1001 to 5000 employees",2002,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"85",156,"Data Scientist","$101K-$165K (Glassdoor est.)",4.5,"Novetta
+4.5","Herndon, VA","Mc Lean, VA","501 to 1000 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$100 to $500 million (USD)","Leidos, CACI International, Booz Allen Hamilton"
+"86",158,"Machine Learning Engineer","$101K-$165K (Glassdoor est.)",-1,"Radical Convergence","Reston, VA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"87",159,"Data Scientist","$101K-$165K (Glassdoor est.)",3.5,"Leidos
+3.5","Fort Meade, MD","Reston, VA","10000+ employees",1969,"Company - Public","Aerospace & Defense","Aerospace & Defense","$10+ billion (USD)","-1"
+"88",160,"Data Scientist","$101K-$165K (Glassdoor est.)",4.5,"Demandbase
+4.5","San Francisco, CA","San Francisco, CA","201 to 500 employees",2006,"Company - Private","Computer Hardware & Software","Information Technology","$100 to $500 million (USD)","Engagio, Bombora, Terminus"
+"89",163,"Data Analyst","$101K-$165K (Glassdoor est.)",2.7,"USAC
+2.7","Washington, DC","Washington, DC","501 to 1000 employees",1997,"Nonprofit Organization","Telecommunications Services","Telecommunications","$25 to $50 million (USD)","-1"
+"90",165,"Data Scientist","$101K-$165K (Glassdoor est.)",4.4,"Offerpad
+4.4","Chandler, AZ","Chandler, AZ","201 to 500 employees",2015,"Company - Private","Real Estate","Real Estate","Unknown / Non-Applicable","-1"
+"91",168,"Data Engineer","$101K-$165K (Glassdoor est.)",3.5,"Magna International Inc.
+3.5","Birmingham, AL","Aurora, Canada","10000+ employees",1957,"Company - Public","-1","-1","$10+ billion (USD)","Bosch, Lear Corporation, Faurecia"
+"92",170,"Data Scientist","$101K-$165K (Glassdoor est.)",3.4,"Kelly
+3.4","Chicago, IL","Troy, MI","5001 to 10000 employees",1946,"Company - Public","Staffing & Outsourcing","Business Services","$5 to $10 billion (USD)","Adecco, ManpowerGroup, Allegis Corporation"
+"93",172,"Data Scientist","$101K-$165K (Glassdoor est.)",4.7,"C3.ai
+4.7","Redwood City, CA","Redwood City, CA","201 to 500 employees",2009,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$100 to $500 million (USD)","GE Digital, Palantir Technologies, Uptake"
+"94",174,"Data Analyst","$101K-$165K (Glassdoor est.)",3.3,"Midland Credit Management
+3.3","San Diego, CA","San Diego, CA","1001 to 5000 employees",1953,"Subsidiary or Business Segment","Banks & Credit Unions","Finance","$1 to $2 billion (USD)","PRA Group"
+"95",176,"Data Engineer","$101K-$165K (Glassdoor est.)",4.4,"Resurgent Capital Services
+4.4","Cincinnati, OH","Greenville, SC","201 to 500 employees",1998,"Company - Private","Venture Capital & Private Equity","Finance","$50 to $100 million (USD)","-1"
+"96",178,"Data Scientist","$56K-$97K (Glassdoor est.)",3.5,"Buckman
+3.5","Memphis, TN","Memphis, TN","1001 to 5000 employees",1945,"Company - Private","Chemical Manufacturing","Manufacturing","$500 million to $1 billion (USD)","-1"
+"97",179,"Machine Learning Engineer","$56K-$97K (Glassdoor est.)",3.6,"Buckman
+3.5","Memphis, TN","Arlington, VA","501 to 1000 employees",1967,"Nonprofit Organization","Federal Agencies","Government","$50 to $100 million (USD)","-1"
+"98",183,"Data Scientist","$56K-$97K (Glassdoor est.)",3.3,"BWX Technologies
+3.3","Oak Ridge, TN","Lynchburg, VA","5001 to 10000 employees",1850,"Company - Public","Aerospace & Defense","Aerospace & Defense","$500 million to $1 billion (USD)","-1"
+"99",191,"Data Engineer","$56K-$97K (Glassdoor est.)",4.1,"Shape Security
+4.1","Santa Clara, CA","Mountain View, CA","51 to 200 employees",2011,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"100",193,"Data Scientist","$56K-$97K (Glassdoor est.)",5,"SkillSoniq
+5.0","San Francisco, CA","Jersey City, NJ","Unknown",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"101",195,"Data Scientist","$56K-$97K (Glassdoor est.)",4.3,"Joby Aviation
+4.3","San Carlos, CA","Santa Cruz, CA","51 to 200 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"102",200,"Data Scientist","$79K-$106K (Glassdoor est.)",3.4,"Spectrum Communications and Consulting
+3.4","Chicago, IL","Chicago, IL","51 to 200 employees",1992,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","-1"
+"103",201,"Data Scientist","$79K-$106K (Glassdoor est.)",4.1,"Coverent
+4.1","McLean, VA","McLean, VA","51 to 200 employees",2008,"Company - Private","Consulting","Business Services","$10 to $25 million (USD)","-1"
+"104",202,"Machine Learning Engineer","$79K-$106K (Glassdoor est.)",3.7,"Mteq
+3.7","Fort Belvoir, VA","Lorton, VA","501 to 1000 employees",1954,"Company - Public","Aerospace & Defense","Aerospace & Defense","$100 to $500 million (USD)","Harris, Fibertek"
+"105",203,"Data Engineer","$79K-$106K (Glassdoor est.)",4.4,"Rocket Lawyer
+4.4","San Francisco, CA","San Francisco, CA","51 to 200 employees",2008,"Company - Private","Computer Hardware & Software","Information Technology","$50 to $100 million (USD)","-1"
+"106",205,"Data Engineer","$79K-$106K (Glassdoor est.)",3.6,"Alion Science & Technology
+3.6","Linthicum Heights, MD","Mc Lean, VA","1001 to 5000 employees",2001,"Company - Private","Research & Development","Business Services","$1 to $2 billion (USD)","-1"
+"107",210,"Data Scientist","$79K-$106K (Glassdoor est.)",3.4,"Dice.com
+3.4","Newton, MA","Denver, CO","201 to 500 employees",1990,"Subsidiary or Business Segment","Staffing & Outsourcing","Business Services","$100 to $500 million (USD)","Monster Worldwide, CareerBuilder, Craigslist"
+"108",211,"Senior Data Scientist","$79K-$106K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"109",223,"Data Engineer","$71K-$123K (Glassdoor est.)",4.4,"Resurgent Capital Services
+4.4","Cincinnati, OH","Greenville, SC","201 to 500 employees",1998,"Company - Private","Venture Capital & Private Equity","Finance","$50 to $100 million (USD)","-1"
+"110",225,"Data Scientist","$71K-$123K (Glassdoor est.)",4.5,"Global Data Management Inc
+4.5","Hartford, CT","Woodbridge, NJ","51 to 200 employees",2008,"Company - Private","IT Services","Information Technology","$5 to $10 million (USD)","-1"
+"111",226,"Data Scientist","$71K-$123K (Glassdoor est.)",3,"Photon Infotech
+3.0","Chicago, IL","Chennai, India","1001 to 5000 employees",1999,"Company - Private","IT Services","Information Technology","$100 to $500 million (USD)","-1"
+"112",227,"Data Scientist","$71K-$123K (Glassdoor est.)",5,"REE
+5.0","United States","Tel Aviv-Yafo, Israel","51 to 200 employees",2018,"Company - Private","Transportation Equipment Manufacturing","Manufacturing","Unknown / Non-Applicable","-1"
+"113",228,"Machine Learning Engineer","$71K-$123K (Glassdoor est.)",3.6,"Riverside Research Institute
+3.6","Beavercreek, OH","Arlington, VA","501 to 1000 employees",1967,"Nonprofit Organization","Federal Agencies","Government","$50 to $100 million (USD)","-1"
+"114",230,"Data Scientist","$71K-$123K (Glassdoor est.)",-1,"Encode, Inc.","Norfolk, VA","Manalapan, NJ","1 to 50 employees",-1,"Company - Private","IT Services","Information Technology","$5 to $10 million (USD)","-1"
+"115",232,"Data Scientist","$71K-$123K (Glassdoor est.)",3.3,"BWX Technologies
+3.3","Oak Ridge, TN","Lynchburg, VA","5001 to 10000 employees",1850,"Company - Public","Aerospace & Defense","Aerospace & Defense","$500 million to $1 billion (USD)","-1"
+"116",235,"Data Scientist","$71K-$123K (Glassdoor est.)",3.3,"II-VI Incorporated
+3.3","Champaign, IL","Saxonburg, PA","10000+ employees",1971,"Company - Public","Telecommunications Manufacturing","Telecommunications","$1 to $2 billion (USD)","Lumentum Operations, Keysight Technologies, O-Net Technologies"
+"117",236,"Data Scientist","$71K-$123K (Glassdoor est.)",4.6,"Surya Systems
+4.6","San Francisco, CA","Bristol, PA","1 to 50 employees",-1,"Company - Private","Computer Hardware & Software","Information Technology","Less than $1 million (USD)","-1"
+"118",237,"Data Scientist","$71K-$123K (Glassdoor est.)",3.8,"PayPal
+3.8","Texas","San Jose, CA","10000+ employees",1998,"Company - Public","Internet","Information Technology","$10+ billion (USD)","Square, Amazon, Apple"
+"119",239,"Data Scientist","$71K-$123K (Glassdoor est.)",3.9,"Predictive Research Inc
+3.9","Plano, TX","Bangalore, India","1 to 50 employees",-1,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","-1"
+"120",240,"Data Scientist","$90K-$124K (Glassdoor est.)",4.7,"Oversight Systems
+4.7","Atlanta, GA","Atlanta, GA","51 to 200 employees",2003,"Company - Private","Computer Hardware & Software","Information Technology","$25 to $50 million (USD)","-1"
+"121",243,"Data Scientist","$90K-$124K (Glassdoor est.)",3.6,"Gigya
+3.6","Palo Alto, CA","Mountain View, CA","201 to 500 employees",2006,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$10 to $25 million (USD)","-1"
+"122",245,"Data Scientist","$90K-$124K (Glassdoor est.)",3.7,"Sanofi
+3.7","Cambridge, MA","Paris, France","10000+ employees",1973,"Company - Public","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10+ billion (USD)","Pfizer, GlaxoSmithKline"
+"123",246,"Data Scientist","$90K-$124K (Glassdoor est.)",3.7,"XPO Logistics
+3.7","Lebanon, IN","Greenwich, CT","10000+ employees",2011,"Company - Public","Transportation Management","Transportation & Logistics","$10+ billion (USD)","DHL Supply Chain, UPS, FedEx"
+"124",247,"Data Scientist","$90K-$124K (Glassdoor est.)",3.9,"Trace Data
+3.9","Oakland, CA","Santa Ana, CA","51 to 200 employees",2000,"Company - Private","Insurance Carriers","Insurance","$10 to $25 million (USD)","-1"
+"125",248,"Data Scientist","$90K-$124K (Glassdoor est.)",4.3,"Descript
+4.3","San Francisco, CA","Houston, TX","1 to 50 employees",-1,"Company - Private","-1","-1","Less than $1 million (USD)","-1"
+"126",251,"Data Scientist","$90K-$124K (Glassdoor est.)",4,"Better Hire
+4.0","Birmingham, AL","Birmingham, AL","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"127",252,"Data Scientist","$90K-$124K (Glassdoor est.)",3.3,"Parker Hannifin
+3.3","Cleveland, OH","Cleveland, OH","10000+ employees",1917,"Company - Public","Industrial Manufacturing","Manufacturing","$10+ billion (USD)","Eaton, SMC Corporation, Bosch Rexroth"
+"128",253,"Data Scientist","$90K-$124K (Glassdoor est.)",4.1,"Gallup
+4.1","New York, NY","Washington, DC","1001 to 5000 employees",1935,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","Advisory Board, Booz Allen Hamilton, McKinsey & Company"
+"129",254,"Data Scientist","$90K-$124K (Glassdoor est.)",3.3,"Insider Inc
+3.3","New York, NY","New York, NY","201 to 500 employees",2007,"Company - Private","News Outlet","Media","$50 to $100 million (USD)","-1"
+"130",255,"Data Scientist","$90K-$124K (Glassdoor est.)",3.9,"Rapid Value Solutions
+3.9","San Francisco, CA","Pleasanton, CA","201 to 500 employees",2009,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"131",258,"Data Scientist","$90K-$124K (Glassdoor est.)",5,"The Drive Media, Inc.
+5.0","New York, NY","-1","Unknown",-1,"Unknown","-1","-1","Unknown / Non-Applicable","-1"
+"132",266,"Data Scientist","$91K-$150K (Glassdoor est.)",3.2,"US Pharmacopeia
+3.2","Rockville, MD","Rockville, MD","1001 to 5000 employees",1820,"Nonprofit Organization","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$100 to $500 million (USD)","-1"
+"133",267,"Data Scientist","$91K-$150K (Glassdoor est.)",4.6,"Itlize Global
+4.6","Piscataway, NJ","Piscataway, NJ","201 to 500 employees",2010,"Company - Private","IT Services","Information Technology","$10 to $25 million (USD)","-1"
+"134",268,"Data Scientist","$91K-$150K (Glassdoor est.)",3.5,"eBay
+3.5","San Jose, CA","San Jose, CA","10000+ employees",1995,"Company - Public","Internet","Information Technology","$10+ billion (USD)","Amazon, Apple"
+"135",270,"Data Engineer","$91K-$150K (Glassdoor est.)",4.1,"Shape Security
+4.1","Santa Clara, CA","Mountain View, CA","51 to 200 employees",2011,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"136",272,"Data Scientist","$91K-$150K (Glassdoor est.)",3.5,"Comcast
+3.5","New York, NY","Philadelphia, PA","10000+ employees",1963,"Company - Public","-1","-1","$10+ billion (USD)","AT&T, Verizon"
+"137",273,"Data Scientist","$91K-$150K (Glassdoor est.)",3.2,"Metronome, LLC
+3.2","Vienna, VA","Fairfax, VA","51 to 200 employees",2011,"Company - Private","IT Services","Information Technology","$10 to $25 million (USD)","-1"
+"138",274,"Data Scientist","$91K-$150K (Glassdoor est.)",5,"SkillSoniq
+5.0","San Francisco, CA","Jersey City, NJ","Unknown",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"139",275,"Data Scientist","$91K-$150K (Glassdoor est.)",4.7,"Lawrence Livermore National Lab
+4.7","Livermore, CA","Livermore, CA","1001 to 5000 employees",1952,"Government","Federal Agencies","Government","$1 to $2 billion (USD)","Los Alamos National Laboratory, NASA Jet Propulsion Laboratory, Sandia National Laboratories"
+"140",277,"Data Scientist","$91K-$150K (Glassdoor est.)",3.6,"Jacobs
+3.6","Herndon, VA","Dallas, TX","10000+ employees",1947,"Company - Public","Architectural & Engineering Services","Business Services","$10+ billion (USD)","Fluor, Bechtel, AECOM"
+"141",278,"Data Scientist","$91K-$150K (Glassdoor est.)",4.8,"Klaviyo
+4.8","Boston, MA","Boston, MA","201 to 500 employees",2012,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"142",279,"Data Scientist","$91K-$150K (Glassdoor est.)",3.3,"Underwriters Laboratories
+3.3","Northbrook, IL","Northbrook, IL","10000+ employees",1894,"Company - Private","Consulting","Business Services","$2 to $5 billion (USD)","Intertek, SGS, Bureau Veritas"
+"143",280,"Data Scientist","$91K-$150K (Glassdoor est.)",3.7,"Altus Group
+3.7","Irvine, CA","Toronto, Canada","1001 to 5000 employees",2005,"Company - Public","Real Estate","Real Estate","$100 to $500 million (USD)","-1"
+"144",281,"Data Scientist","$91K-$150K (Glassdoor est.)",5,"Jobot
+5.0","Irvine, CA","Irvine, CA","51 to 200 employees",2018,"Company - Private","Staffing & Outsourcing","Business Services","$25 to $50 million (USD)","-1"
+"145",282,"Data Scientist","$91K-$150K (Glassdoor est.)",-1,"Trovetechs Inc","San Francisco, CA","Hillsborough, NJ","Unknown",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"146",284,"Data Scientist","$141K-$225K (Glassdoor est.)",5,"Cohere Health
+5.0","Boston, MA","Boston, MA","1 to 50 employees",2019,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"147",285,"Data Scientist","$141K-$225K (Glassdoor est.)",-1,"Trovetechs Inc","San Francisco, CA","Hillsborough, NJ","Unknown",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"148",287,"Data Scientist","$141K-$225K (Glassdoor est.)",4.2,"Oshkosh Corporation
+4.2","Oshkosh, WI","Oshkosh, WI","10000+ employees",1917,"Company - Public","Transportation Equipment Manufacturing","Manufacturing","$5 to $10 billion (USD)","Lockheed Martin, Caterpillar, John Deere"
+"149",288,"Data Scientist","$141K-$225K (Glassdoor est.)",4.3,"Joby Aviation
+4.3","San Carlos, CA","Santa Cruz, CA","51 to 200 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"150",289,"Data Scientist","$141K-$225K (Glassdoor est.)",3.4,"Mackin
+3.4","Menlo Park, CA","Pittsburgh, PA","51 to 200 employees",1960,"Company - Private","Architectural & Engineering Services","Business Services","$10 to $25 million (USD)","-1"
+"151",290,"Data Scientist","$141K-$225K (Glassdoor est.)",-1,"PETADATA","San Francisco, CA","Fremont, CA","51 to 200 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"152",291,"Data Scientist","$141K-$225K (Glassdoor est.)",4.4,"VBeyond Corporation
+4.4","Dallas, TX","Hillsborough, NJ","201 to 500 employees",2006,"Company - Private","Staffing & Outsourcing","Business Services","$5 to $10 million (USD)","-1"
+"153",293,"Data Scientist","$141K-$225K (Glassdoor est.)",3.7,"Take-Two
+3.7","San Francisco, CA","New York, NY","1001 to 5000 employees",1993,"Company - Public","Video Games","Media","$1 to $2 billion (USD)","Activision Blizzard, Electronic Arts"
+"154",294,"Data Scientist","$141K-$225K (Glassdoor est.)",3.7,"Colony Brands
+3.7","Monroe, WI","Monroe, WI","501 to 1000 employees",-1,"Company - Private","Food & Beverage Stores","Retail","$100 to $500 million (USD)","-1"
+"155",295,"Data Scientist","$141K-$225K (Glassdoor est.)",4.1,"Capio Group
+4.1","Sacramento, CA","Goteborg, Sweden","10000+ employees",-1,"Hospital","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","-1"
+"156",296,"Data Scientist","$141K-$225K (Glassdoor est.)",3.4,"SleePare
+3.4","New York, NY","New York, NY","1 to 50 employees",2017,"Company - Private","Other Retail Stores","Retail","Unknown / Non-Applicable","-1"
+"157",297,"Data Analyst","$141K-$225K (Glassdoor est.)",4.5,"ShorePoint
+4.5","Reston, VA","Washington, DC","1 to 50 employees",2017,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"158",298,"Data Scientist","$141K-$225K (Glassdoor est.)",3.5,"Dolphin
+3.5","New York, NY","Lake Buena Vista, FL","1001 to 5000 employees",1990,"Company - Private","Hotels, Motels, & Resorts","Travel & Tourism","Unknown / Non-Applicable","-1"
+"159",299,"Data Scientist","$141K-$225K (Glassdoor est.)",3.6,"TE Connectivity
+3.6","Hampton, VA","Schaffhausen, Switzerland","10000+ employees",2007,"Company - Public","Electrical & Electronic Manufacturing","Manufacturing","$10+ billion (USD)","-1"
+"160",300,"Data Scientist","$141K-$225K (Glassdoor est.)",3.2,"State of Virginia
+3.2","Richmond, VA","Richmond, VA","10000+ employees",1788,"Government","State & Regional Agencies","Government","$10+ billion (USD)","-1"
+"161",301,"Data Scientist","$141K-$225K (Glassdoor est.)",3.7,"TA Digital
+3.7","New York, NY","Newark, CA","501 to 1000 employees",2000,"Company - Private","Computer Hardware & Software","Information Technology","$25 to $50 million (USD)","-1"
+"162",302,"Data Scientist","$141K-$225K (Glassdoor est.)",4,"Market America Inc
+4.0","Monterey, CA","Greensboro, NC","501 to 1000 employees",1992,"Company - Private","Other Retail Stores","Retail","$100 to $500 million (USD)","-1"
+"163",303,"Data Scientist","$145K-$225K(Employer est.)",3.2,"Triplebyte
+3.2","Chicago, IL","San Francisco, CA","51 to 200 employees",2015,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"164",304,"Data Scientist","$145K-$225K(Employer est.)",4.5,"Kingfisher Systems
+4.5","McLean, VA","Falls Church, VA","51 to 200 employees",2005,"Company - Private","Federal Agencies","Government","$25 to $50 million (USD)","-1"
+"165",306,"Data Scientist","$145K-$225K(Employer est.)",3.9,"ALTA IT Services
+3.9","Woodlawn, MD","Rockville, MD","201 to 500 employees",2004,"Company - Private","IT Services","Information Technology","$10 to $25 million (USD)","-1"
+"166",307,"Data Scientist","$145K-$225K(Employer est.)",3.2,"Kollasoft Inc.
+3.2","United States","Scottsdale, AZ","1 to 50 employees",-1,"Company - Private","IT Services","Information Technology","$1 to $5 million (USD)","-1"
+"167",308,"Data Scientist","$145K-$225K(Employer est.)",5,"Kollasoft Inc.
+3.2","New York, NY","Irving, TX","Unknown",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"168",309,"Data Scientist","$145K-$225K(Employer est.)",3.4,"ASRC Federal Holding Company
+3.4","Reston, VA","Beltsville, MD","5001 to 10000 employees",2003,"Company - Private","Aerospace & Defense","Aerospace & Defense","$500 million to $1 billion (USD)","-1"
+"169",310,"Data Scientist","$145K-$225K(Employer est.)",4.4,"Adwait Algorithm
+4.4","New York, NY","Houston, TX","51 to 200 employees",2015,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"170",313,"Data Scientist","$145K-$225K(Employer est.)",3.5,"Cambridge FX
+3.5","Atlanta, GA","Toronto, Canada","201 to 500 employees",1992,"Company - Public","Financial Transaction Processing","Finance","$100 to $500 million (USD)","-1"
+"171",314,"Senior Data Scientist","$145K-$225K(Employer est.)",3.8,"Metromile
+3.8","San Francisco, CA","San Francisco, CA","201 to 500 employees",2011,"Company - Private","Insurance Carriers","Insurance","Unknown / Non-Applicable","-1"
+"172",315,"Data Scientist","$145K-$225K(Employer est.)",3.9,"Criteo
+3.9","Ann Arbor, MI","Paris, France","1001 to 5000 employees",2005,"Company - Public","Internet","Information Technology","$2 to $5 billion (USD)","MediaMath, Conversant, AppNexus"
+"173",316,"Data Scientist","$145K-$225K(Employer est.)",3.4,"Advance Sourcing Concepts
+3.4","Pittsburgh, PA","Pittsburgh, PA","51 to 200 employees",-1,"Company - Private","-1","-1","$1 to $5 million (USD)","-1"
+"174",317,"Data Scientist","$145K-$225K(Employer est.)",3.8,"Enterprise Solutions Inc
+3.8","New York, NY","Naperville, IL","51 to 200 employees",2000,"Company - Private","Staffing & Outsourcing","Business Services","$25 to $50 million (USD)","-1"
+"175",319,"Data Scientist","$145K-$225K(Employer est.)",-1,"Microagility","New York, NY","Princeton, NJ","1 to 50 employees",-1,"Company - Private","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"176",320,"Data Scientist","$145K-$225K(Employer est.)",4.6,"Conch Technologies, Inc
+4.6","Concord, CA","Memphis, TN","51 to 200 employees",-1,"Company - Private","Consulting","Business Services","$5 to $10 million (USD)","-1"
+"177",322,"Data Scientist","$145K-$225K(Employer est.)",-1,"Rainmaker Resources, LLC","Cincinnati, OH","Cincinnati, OH","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"178",323,"Data Scientist","$79K-$147K (Glassdoor est.)",3.7,"GovTech
+3.7","San Francisco, CA","Singapore, Singapore","1001 to 5000 employees",2016,"Government","Federal Agencies","Government","Unknown / Non-Applicable","-1"
+"179",324,"Data Scientist","$79K-$147K (Glassdoor est.)",3.3,"Intellectual Ventures
+3.3","Bellevue, WA","Bellevue, WA","501 to 1000 employees",2000,"Company - Private","Investment Banking & Asset Management","Finance","Unknown / Non-Applicable","-1"
+"180",325,"Data Engineer","$79K-$147K (Glassdoor est.)",4.4,"Rocket Lawyer
+4.4","San Francisco, CA","San Francisco, CA","51 to 200 employees",2008,"Company - Private","Computer Hardware & Software","Information Technology","$50 to $100 million (USD)","-1"
+"181",326,"Data Scientist","$79K-$147K (Glassdoor est.)",3.7,"22nd Century Technologies
+3.7","Oakland, CA","Somerset, NJ","1001 to 5000 employees",1997,"Company - Private","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"182",327,"Data Scientist","$79K-$147K (Glassdoor est.)",3.3,"Huxley
+3.3","San Francisco, CA","London, United Kingdom","201 to 500 employees",1995,"Company - Private","Staffing & Outsourcing","Business Services","$25 to $50 million (USD)","-1"
+"183",328,"Data Scientist","$79K-$147K (Glassdoor est.)",3.4,"FM Systems
+3.4","Boston, MA","Raleigh, NC","51 to 200 employees",1984,"Company - Private","Computer Hardware & Software","Information Technology","$5 to $10 million (USD)","Archibus, iOffice, Planon"
+"184",329,"Data Scientist","$79K-$147K (Glassdoor est.)",-1,"B4Corp","Reston, VA","Leesburg, VA","51 to 200 employees",-1,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"185",330,"Machine Learning Engineer","$79K-$147K (Glassdoor est.)",3.7,"Mteq
+3.7","Fort Belvoir, VA","Lorton, VA","501 to 1000 employees",1954,"Company - Public","Aerospace & Defense","Aerospace & Defense","$100 to $500 million (USD)","Harris, Fibertek"
+"186",333,"Data Scientist","$79K-$147K (Glassdoor est.)",5,"SSATI
+5.0","McLean, VA","Annapolis Junction, MD","1 to 50 employees",2003,"Company - Private","Computer Hardware & Software","Information Technology","$10 to $25 million (USD)","-1"
+"187",335,"Data Scientist","$79K-$147K (Glassdoor est.)",3.4,"Solving IT International Inc
+3.4","Chicago, IL","Chicago, IL","501 to 1000 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"188",336,"Data Scientist","$79K-$147K (Glassdoor est.)",3.3,"The Davey Tree Expert Company
+3.3","Kent, OH","Kent, OH","10000+ employees",1880,"Self-employed","Timber Operations","Agriculture & Forestry","$1 to $2 billion (USD)","ACRT Services, Bartlett Tree Experts"
+"189",337,"Data Scientist","$79K-$147K (Glassdoor est.)",4.6,"Centauri
+4.6","Reston, VA","Chantilly, VA","501 to 1000 employees",1999,"Company - Private","Aerospace & Defense","Aerospace & Defense","$100 to $500 million (USD)","TASC, Vencore, Booz Allen Hamilton"
+"190",338,"Data Scientist","$79K-$147K (Glassdoor est.)",-1,"Stride Search","San Francisco, CA","Westlake Village, CA","1 to 50 employees",-1,"Company - Private","-1","-1","Less than $1 million (USD)","-1"
+"191",339,"Machine Learning Engineer","$79K-$147K (Glassdoor est.)",2.6,"Software Engineering Institute
+2.6","Pittsburgh, PA","Pittsburgh, PA","501 to 1000 employees",1984,"College / University","Colleges & Universities","Education","Unknown / Non-Applicable","-1"
+"192",341,"Data Scientist","$79K-$147K (Glassdoor est.)",4.8,"TechProjects
+4.8","New York, NY","North Brunswick, NJ","1 to 50 employees",2011,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"193",343,"Data Scientist","$122K-$146K (Glassdoor est.)",4,"Netskope
+4.0","Santa Clara, CA","Santa Clara, CA","501 to 1000 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","Skyhigh Networks, Zscaler, NortonLifeLock"
+"194",344,"Data Scientist","$122K-$146K (Glassdoor est.)",4.2,"Eversight
+4.2","Palo Alto, CA","Palo Alto, CA","51 to 200 employees",2013,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$10 to $25 million (USD)","-1"
+"195",346,"Data Scientist","$122K-$146K (Glassdoor est.)",3,"Ameritas Life Insurance Corp
+3.0","Cincinnati, OH","Lincoln, NE","1001 to 5000 employees",1887,"Company - Private","Insurance Agencies & Brokerages","Insurance","$2 to $5 billion (USD)","-1"
+"196",348,"Data Scientist","$122K-$146K (Glassdoor est.)",2.9,"Shimento, Inc.
+2.9","Santa Clara, CA","Benicia, CA","1 to 50 employees",-1,"Company - Private","-1","-1","$1 to $5 million (USD)","-1"
+"197",349,"Data Scientist","$122K-$146K (Glassdoor est.)",5,"Averity
+5.0","New York, NY","New York, NY","1 to 50 employees",2014,"Company - Private","Staffing & Outsourcing","Business Services","Unknown / Non-Applicable","-1"
+"198",350,"Data Scientist","$122K-$146K (Glassdoor est.)",4.7,"Praxis Engineering
+4.7","Chantilly, VA","Annapolis Junction, MD","201 to 500 employees",2002,"Subsidiary or Business Segment","Computer Hardware & Software","Information Technology","$100 to $500 million (USD)","Raytheon Technologies, Northrop Grumman, Booz Allen Hamilton"
+"199",351,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Point72 Ventures","Palo Alto, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"200",353,"Data Scientist","$122K-$146K (Glassdoor est.)",4.9,"Cambridge Mobile Telematics
+4.9","Cambridge, MA","Cambridge, MA","1 to 50 employees",2010,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"201",356,"Data Analyst","$122K-$146K (Glassdoor est.)",3.9,"Nolij Consulting
+3.9","Falls Church, VA","Vienna, VA","51 to 200 employees",2012,"Company - Public","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"202",357,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"203",358,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"204",359,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"205",360,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"206",361,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"207",362,"Data Scientist","$122K-$146K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"208",363,"Senior Data Scientist","$122K-$146K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"209",364,"Data Scientist","$112K-$116K (Glassdoor est.)",4.3,"Quick Base
+4.3","Cambridge, MA","Cambridge, MA","201 to 500 employees",1999,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"210",365,"Data Scientist","$112K-$116K (Glassdoor est.)",3.7,"Takeda
+3.7","Cambridge, MA","OSAKA, Japan","10000+ employees",1781,"Company - Public","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10+ billion (USD)","Novartis, Baxter, Pfizer"
+"211",366,"Data Scientist","$112K-$116K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"212",368,"Data Scientist","$112K-$116K (Glassdoor est.)",4.7,"Compass Consulting Group
+4.7","Thousand Oaks, CA","Danville, CA","51 to 200 employees",2008,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","-1"
+"213",371,"Data Scientist","$112K-$116K (Glassdoor est.)",4.4,"SolutionIT, Inc.
+4.4","Edison, NJ","Wilmington, MA","51 to 200 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"214",372,"Data Scientist","$112K-$116K (Glassdoor est.)",3.2,"Perspecta
+3.2","Adelphi, MD","Chantilly, VA","10000+ employees",2018,"Company - Public","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"215",373,"Data Scientist","$112K-$116K (Glassdoor est.)",4.5,"Smith Hanley Associates
+4.5","Washington, DC","New York, 061","1 to 50 employees",1980,"Company - Private","Staffing & Outsourcing","Business Services","Unknown / Non-Applicable","Kforce, PageGroup, Robert Half"
+"216",375,"Data Scientist","$112K-$116K (Glassdoor est.)",4.4,"Eliassen Group
+4.4","Plano, TX","Reading, MA","1001 to 5000 employees",1989,"Company - Private","Staffing & Outsourcing","Business Services","$100 to $500 million (USD)","TEKsystems, Kforce, Randstad US"
+"217",376,"Data Scientist","$112K-$116K (Glassdoor est.)",3.1,"Bayside Solutions
+3.1","Sunnyvale, CA","Pleasanton, CA","1 to 50 employees",2001,"Company - Private","Staffing & Outsourcing","Business Services","$1 to $5 million (USD)","-1"
+"218",378,"Data Scientist","$112K-$116K (Glassdoor est.)",3.8,"AgreeYa Solutions
+3.8","Thousand Oaks, CA","Folsom, CA","1001 to 5000 employees",1999,"Company - Private","IT Services","Information Technology","$50 to $100 million (USD)","-1"
+"219",379,"Data Scientist","$112K-$116K (Glassdoor est.)",3.7,"Carolina Power & Light Co
+3.7","McLean, VA","Raleigh, NC","5001 to 10000 employees",1908,"Subsidiary or Business Segment","Energy","Oil, Gas, Energy & Utilities","Unknown / Non-Applicable","South Carolina Electric & Gas, Virginia Electric and Power"
+"220",385,"Senior Data Scientist","$110K-$163K (Glassdoor est.)",4.8,"Klaviyo
+4.8","Boston, MA","Boston, MA","201 to 500 employees",2012,"Company - Private","Computer Hardware & Software","Information Technology","Unknown / Non-Applicable","-1"
+"221",388,"Data Scientist","$110K-$163K (Glassdoor est.)",-1,"HireAi","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"222",389,"Data Scientist","$110K-$163K (Glassdoor est.)",-1,"HireAi","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"223",393,"Data Engineer","$110K-$163K (Glassdoor est.)",4.5,"Kingfisher Systems
+4.5","Falls Church, VA","Falls Church, VA","51 to 200 employees",2005,"Company - Private","Federal Agencies","Government","$25 to $50 million (USD)","-1"
+"224",396,"Data Scientist","$110K-$163K (Glassdoor est.)",4.3,"Visionary Integration Professionals
+4.3","Washington, DC","Folsom, CA","501 to 1000 employees",1996,"Company - Private","IT Services","Information Technology","$100 to $500 million (USD)","CGI (Nevada), Accenture, Deloitte"
+"225",407,"Data Scientist","$124K-$198K (Glassdoor est.)",3.2,"Postmates - Corporate HQ
+3.2","San Francisco, CA","San Francisco, CA","1001 to 5000 employees",2011,"Company - Private","Express Delivery Services","Transportation & Logistics","Unknown / Non-Applicable","DoorDash, Uber, Grubhub"
+"226",408,"Data Scientist","$124K-$198K (Glassdoor est.)",4.9,"Visionist, Inc.
+4.9","Columbia, MD","Columbia, MD","51 to 200 employees",2010,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$10 to $25 million (USD)","-1"
+"227",409,"Data Scientist","$124K-$198K (Glassdoor est.)",-1,"Navio","San Mateo, CA","Half Moon Bay, CA","Unknown",-1,"Unknown","-1","-1","Unknown / Non-Applicable","-1"
+"228",410,"Data Scientist","$124K-$198K (Glassdoor est.)",3.3,"Concerto HealthAI
+3.3","Boston, MA","Boston, MA","201 to 500 employees",2018,"Company - Private","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","Unknown / Non-Applicable","-1"
+"229",411,"Data Scientist","$124K-$198K (Glassdoor est.)",-1,"Evolvinc","Burbank, CA","Los Angeles, CA","1 to 50 employees",2005,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"230",412,"Data Scientist","$124K-$198K (Glassdoor est.)",5,"PROPRIUS
+5.0","Sunnyvale, CA","London, United Kingdom","1 to 50 employees",-1,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"231",413,"Data Scientist","$124K-$198K (Glassdoor est.)",3.4,"TECHNOCRAFT Solutions
+3.4","San Ramon, CA","Hilliard, OH","1 to 50 employees",-1,"Company - Private","Advertising & Marketing","Business Services","$1 to $5 million (USD)","-1"
+"232",414,"Data Scientist","$124K-$198K (Glassdoor est.)",4.1,"Latitude, Inc.
+4.1","Washington, DC","Hanover, MD","1 to 50 employees",-1,"Company - Private","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"233",415,"Data Scientist","$124K-$198K (Glassdoor est.)",5,"Royce Geospatial
+5.0","Springfield, VA","Arlington, VA","51 to 200 employees",2014,"Company - Private","Aerospace & Defense","Aerospace & Defense","$10 to $25 million (USD)","-1"
+"234",416,"Data Scientist","$124K-$198K (Glassdoor est.)",4.2,"CyberCoders
+4.2","Phoenix, AZ","Irvine, CA","201 to 500 employees",1999,"Subsidiary or Business Segment","Staffing & Outsourcing","Business Services","$100 to $500 million (USD)","-1"
+"235",417,"Data Scientist","$124K-$198K (Glassdoor est.)",3.7,"Booz Allen Hamilton Inc.
+3.7","Oxnard, CA","Mc Lean, VA","10000+ employees",1914,"Company - Public","Consulting","Business Services","$5 to $10 billion (USD)","Accenture, Deloitte, PwC"
+"236",418,"Data Scientist","$124K-$198K (Glassdoor est.)",3.8,"Burns & McDonnell
+3.8","Kansas City, MO","Kansas City, MO","5001 to 10000 employees",1898,"Company - Private","Architectural & Engineering Services","Business Services","$1 to $2 billion (USD)","Bechtel Jacobs, Black & Veatch, HNTB"
+"237",419,"Data Scientist","$124K-$198K (Glassdoor est.)",4.8,"InvenTech Info
+4.8","Jersey City, NJ","Bengaluru, India","201 to 500 employees",2010,"Company - Private","IT Services","Information Technology","$1 to $5 million (USD)","-1"
+"238",420,"Data Scientist","$124K-$198K (Glassdoor est.)",3.5,"Robert Half
+3.5","Manchester, NH","Menlo Park, CA","10000+ employees",1948,"Company - Public","Staffing & Outsourcing","Business Services","$2 to $5 billion (USD)","Adecco, Manpower"
+"239",422,"Data Scientist","$124K-$198K (Glassdoor est.)",4.5,"Conflux Systems Inc.
+4.5","Winters, TX","Alpharetta, GA","1 to 50 employees",-1,"Company - Private","Accounting","Accounting & Legal","Less than $1 million (USD)","-1"
+"240",423,"Data Scientist","$124K-$198K (Glassdoor est.)",3.9,"Criteo
+3.9","Ann Arbor, MI","Paris, France","1001 to 5000 employees",2005,"Company - Public","Internet","Information Technology","$2 to $5 billion (USD)","MediaMath, Conversant, AppNexus"
+"241",424,"Data Scientist","$124K-$198K (Glassdoor est.)",3.4,"Voice
+3.4","Brooklyn, NY","-1","Unknown",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"242",425,"Data Scientist","$124K-$198K (Glassdoor est.)",-1,"Microagility","New York, NY","Princeton, NJ","1 to 50 employees",-1,"Company - Private","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"243",426,"Data Scientist","$124K-$198K (Glassdoor est.)",4.1,"Coverent
+4.1","McLean, VA","McLean, VA","51 to 200 employees",2008,"Company - Private","Consulting","Business Services","$10 to $25 million (USD)","-1"
+"244",427,"Data Scientist","$79K-$133K (Glassdoor est.)",3.7,"Via Transportation
+3.7","New York, NY","New York, NY","501 to 1000 employees",2012,"Company - Private","Internet","Information Technology","Unknown / Non-Applicable","-1"
+"245",428,"Senior Data Scientist","$79K-$133K (Glassdoor est.)",3.5,"Benson Hill
+3.5","Saint Louis, MO","Saint Louis, MO","201 to 500 employees",2012,"Company - Private","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$1 to $5 million (USD)","-1"
+"246",429,"Data Scientist","$79K-$133K (Glassdoor est.)",4.6,"Conch Technologies, Inc
+4.6","Concord, CA","Memphis, TN","51 to 200 employees",-1,"Company - Private","Consulting","Business Services","$5 to $10 million (USD)","-1"
+"247",430,"Data Scientist","$79K-$133K (Glassdoor est.)",-1,"Falcon IT & Staffing Solutions","Fort Belvoir, VA","Washington, DC","Unknown",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"248",431,"Data Scientist","$79K-$133K (Glassdoor est.)",-1,"Rainmaker Resources, LLC","Cincinnati, OH","Cincinnati, OH","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"249",432,"Data Engineer","$79K-$133K (Glassdoor est.)",4.4,"Rocket Lawyer
+4.4","San Francisco, CA","San Francisco, CA","51 to 200 employees",2008,"Company - Private","Computer Hardware & Software","Information Technology","$50 to $100 million (USD)","-1"
+"250",433,"Data Scientist","$79K-$133K (Glassdoor est.)",3.6,"DataLab USA
+3.6","Germantown, MD","Germantown, MD","51 to 200 employees",-1,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","Acxiom, Merkle, Epsilon (North Carolina)"
+"251",434,"Data Scientist","$79K-$133K (Glassdoor est.)",3.1,"Werner Enterprises Inc
+3.1","Omaha, NE","Omaha, NE","10000+ employees",1956,"Company - Public","Logistics & Supply Chain","Transportation & Logistics","$2 to $5 billion (USD)","-1"
+"252",435,"Data Scientist","$79K-$133K (Glassdoor est.)",5,"PeopleCom
+5.0","McLean, VA","Reston, VA","1 to 50 employees",-1,"Company - Private","-1","-1","$1 to $5 million (USD)","-1"
+"253",437,"Data Scientist","$79K-$133K (Glassdoor est.)",-1,"B4Corp","Reston, VA","Leesburg, VA","51 to 200 employees",-1,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"254",438,"Data Scientist","$79K-$133K (Glassdoor est.)",-1,"Blue Icy Water, LLC","United States","Livonia, MI","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"255",439,"Data Scientist","$79K-$133K (Glassdoor est.)",3.5,"Farmer's Business Network, Inc.
+3.5","San Carlos, CA","San Carlos, CA","201 to 500 employees",2014,"Company - Private","Farm Support Services","Agriculture & Forestry","Unknown / Non-Applicable","-1"
+"256",440,"Data Scientist","$79K-$133K (Glassdoor est.)",-1,"Sonde Health","Boston, MA","Boston, MA","1 to 50 employees",-1,"Private Practice / Firm","Health Care Services & Hospitals","Health Care","Less than $1 million (USD)","-1"
+"257",441,"Data Scientist","$79K-$133K (Glassdoor est.)",5,"Maxiom
+5.0","Ashburn, VA","Ashburn, VA","1 to 50 employees",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"258",442,"Data Scientist","$79K-$133K (Glassdoor est.)",2.7,"Change Healthcare
+2.7","Lombard, IL","Nashville, TN","10000+ employees",2007,"Company - Public","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"259",443,"Data Scientist","$79K-$133K (Glassdoor est.)",4.1,"DCS Corp
+4.1","Hampton, VA","Alexandria, VA","1001 to 5000 employees",1977,"Company - Private","Research & Development","Business Services","$100 to $500 million (USD)","-1"
+"260",444,"Data Scientist","$79K-$133K (Glassdoor est.)",2.1,"Hive (CA)
+2.1","San Francisco, CA","Los Angeles, CA","Unknown",2019,"Company - Private","Telecommunications Services","Telecommunications","Unknown / Non-Applicable","-1"
+"261",448,"Data Scientist","$69K-$116K (Glassdoor est.)",3.3,"Hackensack Meridian Health
+3.3","Edison, NJ","Edison, NJ","10000+ employees",-1,"Nonprofit Organization","Health Care Services & Hospitals","Health Care","$5 to $10 billion (USD)","-1"
+"262",450,"Data Scientist","$69K-$116K (Glassdoor est.)",3.2,"Net2Source Inc.
+3.2","Alpharetta, GA","Somerset, NJ","1001 to 5000 employees",2007,"Company - Private","Staffing & Outsourcing","Business Services","$100 to $500 million (USD)","-1"
+"263",451,"Data Scientist","$69K-$116K (Glassdoor est.)",3.2,"The Trade Desk
+3.2","Boulder, CO","Ventura, CA","1001 to 5000 employees",2009,"Company - Public","Internet","Information Technology","Unknown / Non-Applicable","-1"
+"264",453,"Data Scientist","$69K-$116K (Glassdoor est.)",4.4,"Knowesis Inc.
+4.4","Falls Church, VA","Fairfax, VA","51 to 200 employees",2007,"Company - Private","Consulting","Business Services","$25 to $50 million (USD)","Booz Allen Hamilton, Deloitte, ERPi"
+"265",454,"Data Scientist","$69K-$116K (Glassdoor est.)",3.1,"MoTek Technologies
+3.1","Mountain View, CA","San Jose, CA","1 to 50 employees",2009,"Company - Private","IT Services","Information Technology","$1 to $5 million (USD)","-1"
+"266",455,"Data Scientist","$69K-$116K (Glassdoor est.)",3.3,"The Davey Tree Expert Company
+3.3","Kent, OH","Kent, OH","10000+ employees",1880,"Self-employed","Timber Operations","Agriculture & Forestry","$1 to $2 billion (USD)","ACRT Services, Bartlett Tree Experts"
+"267",456,"Data Scientist","$69K-$116K (Glassdoor est.)",3.5,"HPOne
+3.5","Trumbull, CT","Trumbull, CT","501 to 1000 employees",2006,"Company - Private","Insurance Carriers","Insurance","$50 to $100 million (USD)","-1"
+"268",457,"Data Scientist","$69K-$116K (Glassdoor est.)",-1,"Stride Search","San Francisco, CA","Westlake Village, CA","1 to 50 employees",-1,"Company - Private","-1","-1","Less than $1 million (USD)","-1"
+"269",458,"Machine Learning Engineer","$69K-$116K (Glassdoor est.)",2.6,"Software Engineering Institute
+2.6","Pittsburgh, PA","Pittsburgh, PA","501 to 1000 employees",1984,"College / University","Colleges & Universities","Education","Unknown / Non-Applicable","-1"
+"270",459,"Data Scientist","$69K-$116K (Glassdoor est.)",-1,"Blue Cloak LLC","Sterling, VA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"271",460,"Data Scientist","$69K-$116K (Glassdoor est.)",2.7,"TBWA\Chiat\Day
+2.7","New York, NY","New York, NY","1001 to 5000 employees",1968,"Company - Public","Advertising & Marketing","Business Services","$100 to $500 million (USD)","-1"
+"272",461,"Data Scientist","$69K-$116K (Glassdoor est.)",3.5,"ThreeBridge Solutions
+3.5","Alpharetta, GA","Minneapolis, MN","501 to 1000 employees",2009,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","-1"
+"273",462,"Data Scientist","$69K-$116K (Glassdoor est.)",3.2,"Numeric, LLC
+3.2","Philadelphia, PA","Chadds Ford, PA","1 to 50 employees",-1,"Company - Private","Staffing & Outsourcing","Business Services","$5 to $10 million (USD)","-1"
+"274",464,"Data Scientist","$69K-$116K (Glassdoor est.)",4.2,"Centraprise
+4.2","Foster City, CA","Edison, NJ","51 to 200 employees",-1,"Company - Private","IT Services","Information Technology","Less than $1 million (USD)","-1"
+"275",465,"Data Scientist","$69K-$116K (Glassdoor est.)",4.8,"TechProjects
+4.8","New York, NY","North Brunswick, NJ","1 to 50 employees",2011,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"276",466,"Data Scientist","$69K-$116K (Glassdoor est.)",4.2,"DW Simpson
+4.2","Frederick, MD","Chicago, IL","51 to 200 employees",1989,"Company - Private","Staffing & Outsourcing","Business Services","$10 to $25 million (USD)","-1"
+"277",468,"Data Scientist","$31K-$56K (Glassdoor est.)",4,"Grid Dynamics
+4.0","Santa Clara, CA","San Ramon, CA","1001 to 5000 employees",2006,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$50 to $100 million (USD)","Luxoft, EPAM, Capgemini Invent"
+"278",471,"Data Scientist","$31K-$56K (Glassdoor est.)",3.9,"LinQuest
+3.9","Colorado Springs, CO","Los Angeles, CA","501 to 1000 employees",2004,"Company - Private","Aerospace & Defense","Aerospace & Defense","$50 to $100 million (USD)","-1"
+"279",473,"Data Scientist","$31K-$56K (Glassdoor est.)",4,"Trexquant Investment
+4.0","United States","Stamford, CT","1 to 50 employees",2012,"Company - Private","Investment Banking & Asset Management","Finance","Unknown / Non-Applicable","-1"
+"280",474,"Data Scientist","$31K-$56K (Glassdoor est.)",3,"Ameritas Life Insurance Corp
+3.0","Cincinnati, OH","Lincoln, NE","1001 to 5000 employees",1887,"Company - Private","Insurance Agencies & Brokerages","Insurance","$2 to $5 billion (USD)","-1"
+"281",475,"Data Scientist","$31K-$56K (Glassdoor est.)",3.7,"Fleetcor
+3.7","Atlanta, GA","Atlanta, GA","5001 to 10000 employees",2000,"Company - Public","Financial Transaction Processing","Finance","$2 to $5 billion (USD)","-1"
+"282",476,"Data Scientist","$31K-$56K (Glassdoor est.)",4.5,"Radiant Digital
+4.5","Washington, DC","New York, NY","1 to 50 employees",-1,"Company - Private","-1","-1","Less than $1 million (USD)","-1"
+"283",477,"Data Scientist","$31K-$56K (Glassdoor est.)",2.8,"Child Care Aware of America
+2.8","Arlington, VA","Arlington, VA","51 to 200 employees",1987,"Nonprofit Organization","Social Assistance","Non-Profit","$25 to $50 million (USD)","-1"
+"284",478,"Data Scientist","$31K-$56K (Glassdoor est.)",4.1,"IntelliPro Group Inc.
+4.1","Santa Clara, CA","Santa Clara, CA","201 to 500 employees",-1,"Company - Private","-1","-1","$10 to $25 million (USD)","-1"
+"285",480,"Data Scientist","$31K-$56K (Glassdoor est.)",4.7,"Praxis Engineering
+4.7","Chantilly, VA","Annapolis Junction, MD","201 to 500 employees",2002,"Subsidiary or Business Segment","Computer Hardware & Software","Information Technology","$100 to $500 million (USD)","Raytheon Technologies, Northrop Grumman, Booz Allen Hamilton"
+"286",481,"Data Scientist","$31K-$56K (Glassdoor est.)",3.4,"USI
+3.4","Southfield, MI","Saint Paul, MN","1001 to 5000 employees",1998,"Company - Private","Construction","Construction, Repair & Maintenance","$100 to $500 million (USD)","-1"
+"287",482,"Data Scientist","$31K-$56K (Glassdoor est.)",3.9,"Apex Systems
+3.9","San Francisco, CA","Glen Allen, VA","1001 to 5000 employees",1995,"Subsidiary or Business Segment","Staffing & Outsourcing","Business Services","$2 to $5 billion (USD)","TEKsystems, Insight Global, Accenture"
+"288",483,"Data Scientist","$31K-$56K (Glassdoor est.)",2.9,"Pragmatics, Inc.
+2.9","United States","Reston, VA","201 to 500 employees",1985,"Company - Private","IT Services","Information Technology","$100 to $500 million (USD)","-1"
+"289",485,"Data Scientist","$31K-$56K (Glassdoor est.)",4.9,"Cambridge Mobile Telematics
+4.9","Cambridge, MA","Cambridge, MA","1 to 50 employees",2010,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"290",488,"Data Scientist","$95K-$119K (Glassdoor est.)",3.5,"The Knot Worldwide
+3.5","Washington, DC","Chevy Chase, MD","1001 to 5000 employees",2019,"Company - Private","Internet","Information Technology","Unknown / Non-Applicable","Zola Registry"
+"291",489,"Data Scientist","$95K-$119K (Glassdoor est.)",3.5,"Crossover Health
+3.5","San Clemente, CA","Aliso Viejo, CA","1 to 50 employees",2010,"Company - Private","Health Care Services & Hospitals","Health Care","$1 to $5 million (USD)","-1"
+"292",490,"Data Scientist","$95K-$119K (Glassdoor est.)",4,"Lorven Technologies Inc
+4.0","New York, NY","Plainsboro, NJ","1 to 50 employees",-1,"Company - Private","Accounting","Accounting & Legal","Less than $1 million (USD)","-1"
+"293",491,"Data Analyst","$95K-$119K (Glassdoor est.)",3.9,"Nolij Consulting
+3.9","Falls Church, VA","Vienna, VA","51 to 200 employees",2012,"Company - Public","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"294",492,"Data Scientist","$95K-$119K (Glassdoor est.)",3.4,"Dice.com
+3.4","Newton, MA","Denver, CO","201 to 500 employees",1990,"Subsidiary or Business Segment","Staffing & Outsourcing","Business Services","$100 to $500 million (USD)","Monster Worldwide, CareerBuilder, Craigslist"
+"295",493,"Data Scientist","$95K-$119K (Glassdoor est.)",3.5,"Gap Inc.
+3.5","San Francisco, CA","San Francisco, CA","10000+ employees",1969,"Company - Public","Department, Clothing, & Shoe Stores","Retail","$10+ billion (USD)","H&M, Inditex, Fast Retailing"
+"296",494,"Data Scientist","$95K-$119K (Glassdoor est.)",4.7,"Tygart Technology, Inc
+4.7","Washington, DC","Fairmont, WV","1 to 50 employees",-1,"Company - Private","-1","-1","$1 to $5 million (USD)","-1"
+"297",495,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"298",496,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"299",497,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"300",498,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"301",499,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"302",500,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Hatch Data Inc","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"303",501,"Data Scientist","$95K-$119K (Glassdoor est.)",4.6,"Murray Resources
+4.6","The Woodlands, TX","Houston, TX","1 to 50 employees",1988,"Company - Private","Staffing & Outsourcing","Business Services","$10 to $25 million (USD)","-1"
+"304",502,"Data Scientist","$95K-$119K (Glassdoor est.)",4,"New York Technology Partners
+4.0","Seattle, WA","Jersey City, NJ","51 to 200 employees",1999,"Company - Private","Computer Hardware & Software","Information Technology","$10 to $25 million (USD)","-1"
+"305",503,"Data Scientist","$95K-$119K (Glassdoor est.)",4,"Two95 International Inc.
+4.0","Chicago, IL","Cherry Hill, NJ","1 to 50 employees",-1,"Company - Private","Staffing & Outsourcing","Business Services","$1 to $5 million (USD)","-1"
+"306",504,"Data Scientist","$95K-$119K (Glassdoor est.)",-1,"Sophinea","Chantilly, VA","-1","1 to 50 employees",-1,"Unknown","-1","-1","Unknown / Non-Applicable","-1"
+"307",505,"Data Scientist","$95K-$119K (Glassdoor est.)",4.7,"CRS Group
+4.7","Chicago, IL","Itasca, IL","51 to 200 employees",1994,"Company - Private","Staffing & Outsourcing","Business Services","$10 to $25 million (USD)","-1"
+"308",506,"Data Scientist","$95K-$119K (Glassdoor est.)",3.5,"Blackstone Talent Group
+3.5","San Francisco, CA","San Francisco, CA","51 to 200 employees",1998,"Company - Private","Consulting","Business Services","$25 to $50 million (USD)","-1"
+"309",510,"Data Scientist","$212K-$331K (Glassdoor est.)",3.6,"Creative Circle
+3.6","United States","Los Angeles, CA","201 to 500 employees",2002,"Company - Public","Staffing & Outsourcing","Business Services","Unknown / Non-Applicable","Aquent, 24 Seven Talent"
+"310",512,"Senior Data Scientist","$212K-$331K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"311",513,"Data Scientist","$212K-$331K (Glassdoor est.)",4.7,"Sharpedge Solutions Inc
+4.7","Seattle, WA","Lombard, IL","Unknown",-1,"Company - Private","Publishing","Media","Less than $1 million (USD)","-1"
+"312",514,"Data Scientist","$212K-$331K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"313",515,"Data Scientist","$212K-$331K (Glassdoor est.)",3.6,"Alaka`ina Foundation Family of Companies
+3.6","Fort Sam Houston, TX","Honolulu, HI","501 to 1000 employees",-1,"Government","-1","-1","Unknown / Non-Applicable","-1"
+"314",517,"Data Scientist","$212K-$331K (Glassdoor est.)",2.7,"Hexagon US Federal
+2.7","Lexington Park, MD","Chantilly, VA","51 to 200 employees",2010,"Company - Public","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"315",520,"Data Scientist","$212K-$331K (Glassdoor est.)",4,"Comtech Global Inc
+4.0","Washington, DC","Columbus, OH","51 to 200 employees",-1,"Company - Private","Health, Beauty, & Fitness","Consumer Services","$5 to $10 million (USD)","-1"
+"316",521,"Data Scientist","$212K-$331K (Glassdoor est.)",3.8,"Aveshka, Inc.
+3.8","Washington, DC","Arlington, VA","51 to 200 employees",2010,"Company - Public","IT Services","Information Technology","$10 to $25 million (USD)","-1"
+"317",524,"Data Scientist","$212K-$331K (Glassdoor est.)",-1,"CompuForce","New York, NY","New York, NY","Unknown",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"318",525,"Data Scientist","$212K-$331K (Glassdoor est.)",4.5,"Smith Hanley Associates
+4.5","Washington, DC","New York, 061","1 to 50 employees",1980,"Company - Private","Staffing & Outsourcing","Business Services","Unknown / Non-Applicable","Kforce, PageGroup, Robert Half"
+"319",527,"Data Scientist","$212K-$331K (Glassdoor est.)",2.7,"1-800-Flowers
+2.7","New York, NY","Carle Place, NY","1001 to 5000 employees",1976,"Company - Public","Wholesale","Business Services","$1 to $2 billion (USD)","-1"
+"320",528,"Data Scientist","$212K-$331K (Glassdoor est.)",3.5,"Aptive
+3.5","Washington, DC","Alexandria, VA","51 to 200 employees",2012,"Company - Private","Consulting","Business Services","$25 to $50 million (USD)","-1"
+"321",530,"Data Scientist","$66K-$112K (Glassdoor est.)",3.6,"Powertek
+3.6","Washington, DC","Rockville, MD","51 to 200 employees",2001,"Company - Private","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"322",531,"Data Scientist","$66K-$112K (Glassdoor est.)",5,"JCD Staffing
+5.0","Washington, DC","Germantown, MD","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"323",532,"Data Scientist","$66K-$112K (Glassdoor est.)",3.1,"Bayside Solutions
+3.1","Sunnyvale, CA","Pleasanton, CA","1 to 50 employees",2001,"Company - Private","Staffing & Outsourcing","Business Services","$1 to $5 million (USD)","-1"
+"324",534,"Data Scientist","$66K-$112K (Glassdoor est.)",3.4,"MILVETS Systems Technology, Inc.
+3.4","Patuxent, Anne Arundel, MD","Orlando, FL","51 to 200 employees",1986,"Company - Private","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"325",536,"Data Scientist","$66K-$112K (Glassdoor est.)",4.1,"Kforce
+4.1","Fairfax, VA","Tampa, FL","10000+ employees",1966,"Company - Public","Staffing & Outsourcing","Business Services","$1 to $2 billion (USD)","-1"
+"326",540,"Data Scientist","$66K-$112K (Glassdoor est.)",3.8,"AgreeYa Solutions
+3.8","Thousand Oaks, CA","Folsom, CA","1001 to 5000 employees",1999,"Company - Private","IT Services","Information Technology","$50 to $100 million (USD)","-1"
+"327",541,"Data Scientist","$66K-$112K (Glassdoor est.)",3.7,"Carolina Power & Light Co
+3.7","McLean, VA","Raleigh, NC","5001 to 10000 employees",1908,"Subsidiary or Business Segment","Energy","Oil, Gas, Energy & Utilities","Unknown / Non-Applicable","South Carolina Electric & Gas, Virginia Electric and Power"
+"328",543,"Data Scientist","$66K-$112K (Glassdoor est.)",3.9,"Brillient
+3.9","Silver Spring, MD","Reston, VA","501 to 1000 employees",2006,"Company - Private","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"329",545,"Data Scientist","$66K-$112K (Glassdoor est.)",2.9,"Xator Corporation
+2.9","Washington, DC","Reston, VA","501 to 1000 employees",-1,"Contract","IT Services","Information Technology","$25 to $50 million (USD)","-1"
+"330",546,"Data Scientist","$66K-$112K (Glassdoor est.)",4.6,"HAN IT Staffing Inc.
+4.6","New York, NY","Totowa, NJ","51 to 200 employees",2012,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"331",547,"Data Scientist","$66K-$112K (Glassdoor est.)",3.4,"Infinitive Inc
+3.4","McLean, VA","Cedar Rapids, IA","201 to 500 employees",1997,"Company - Private","Enterprise Software & Network Solutions","Information Technology","$10 to $25 million (USD)","-1"
+"332",550,"Data Scientist","$128K-$201K (Glassdoor est.)",4.3,"Lightspeed Systems
+4.3","Austin, TX","Austin, TX","51 to 200 employees",1999,"Company - Private","Computer Hardware & Software","Information Technology","$25 to $50 million (USD)","-1"
+"333",551,"Senior Data Scientist","$128K-$201K (Glassdoor est.)",3.9,"Thumbtack
+3.9","San Francisco, CA","San Francisco, CA","501 to 1000 employees",2009,"Company - Private","Internet","Information Technology","Unknown / Non-Applicable","-1"
+"334",555,"Data Scientist","$128K-$201K (Glassdoor est.)",-1,"HireAi","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"335",557,"Data Scientist","$128K-$201K (Glassdoor est.)",3.3,"ICW Group
+3.3","San Diego, CA","San Diego, CA","501 to 1000 employees",1972,"Company - Private","Insurance Carriers","Insurance","$500 million to $1 billion (USD)","Liberty Mutual Insurance, EMPLOYERS, Travelers"
+"336",559,"Data Scientist","$128K-$201K (Glassdoor est.)",4.5,"E3 Federal Solutions
+4.5","Chantilly, VA","McLean, VA","501 to 1000 employees",2004,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","-1"
+"337",560,"Data Engineer","$128K-$201K (Glassdoor est.)",4.5,"Kingfisher Systems
+4.5","Falls Church, VA","Falls Church, VA","51 to 200 employees",2005,"Company - Private","Federal Agencies","Government","$25 to $50 million (USD)","-1"
+"338",562,"Senior Data Scientist","$128K-$201K (Glassdoor est.)",3.1,"Group O
+3.1","Chicago, IL","Milan, IL","1001 to 5000 employees",1974,"Company - Private","Staffing & Outsourcing","Business Services","$500 million to $1 billion (USD)","-1"
+"339",567,"Machine Learning Engineer","$128K-$201K (Glassdoor est.)",3.9,"Temboo
+3.9","New York, NY","New York, NY","1 to 50 employees",-1,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"340",568,"Data Scientist","$128K-$201K (Glassdoor est.)",-1,"Kibo","Philadelphia, PA","Marbella, Spain","Unknown",-1,"Company - Public","-1","-1","Unknown / Non-Applicable","-1"
+"341",570,"Data Scientist","$138K-$158K (Glassdoor est.)",3.9,"Mars
+3.9","United States","Mc Lean, VA","10000+ employees",1911,"Company - Private","Food & Beverage Manufacturing","Manufacturing","$10+ billion (USD)","-1"
+"342",586,"Data Engineer","$138K-$158K (Glassdoor est.)",3.4,"Spectrum Communications and Consulting
+3.4","Chicago, IL","Chicago, IL","51 to 200 employees",1992,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","-1"
+"343",590,"Data Engineer","$138K-$158K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","McLean, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"344",592,"Senior Data Scientist","$80K-$132K (Glassdoor est.)",4,"Autodesk
+4.0","San Francisco, CA","San Rafael, CA","5001 to 10000 employees",1982,"Company - Public","Computer Hardware & Software","Information Technology","$2 to $5 billion (USD)","-1"
+"345",593,"Data Scientist","$80K-$132K (Glassdoor est.)",3.4,"USI
+3.4","Southfield, MI","Saint Paul, MN","1001 to 5000 employees",1998,"Company - Private","Construction","Construction, Repair & Maintenance","$100 to $500 million (USD)","-1"
+"346",594,"Data Scientist","$80K-$132K (Glassdoor est.)",3.9,"GSK
+3.9","Collegeville, PA","Brentford, United Kingdom","10000+ employees",1830,"Company - Public","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$10+ billion (USD)","Pfizer, AstraZeneca, Merck"
+"347",595,"Data Scientist","$80K-$132K (Glassdoor est.)",3.8,"CIA
+3.8","Washington, DC","Langley, VA","Unknown",1947,"Government","Federal Agencies","Government","Unknown / Non-Applicable","-1"
+"348",596,"Data Scientist","$80K-$132K (Glassdoor est.)",4.5,"Maven Wave Partners
+4.5","Chicago, IL","Chicago, IL","201 to 500 employees",2008,"Company - Private","Consulting","Business Services","$50 to $100 million (USD)","-1"
+"349",597,"Data Scientist","$80K-$132K (Glassdoor est.)",4.3,"Ovative Group
+4.3","Minneapolis, MN","Minneapolis, MN","51 to 200 employees",2009,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","-1"
+"350",598,"Data Scientist","$80K-$132K (Glassdoor est.)",3.6,"Kognetics
+3.6","Gahanna, OH","New York, NY","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"351",599,"Data Scientist","$80K-$132K (Glassdoor est.)",2.9,"Envision Healthcare
+2.9","Nashville, TN","Nashville, TN","10000+ employees",2005,"Company - Private","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","-1"
+"352",600,"Data Scientist","$80K-$132K (Glassdoor est.)",2.9,"Pragmatics, Inc.
+2.9","United States","Reston, VA","201 to 500 employees",1985,"Company - Private","IT Services","Information Technology","$100 to $500 million (USD)","-1"
+"353",601,"Data Scientist","$80K-$132K (Glassdoor est.)",3.2,"ConsumerTrack
+3.2","California","Los Angeles, CA","51 to 200 employees",2004,"Company - Private","Internet","Information Technology","$25 to $50 million (USD)","-1"
+"354",604,"Data Scientist","$80K-$132K (Glassdoor est.)",3.5,"Crossover Health
+3.5","San Clemente, CA","Aliso Viejo, CA","1 to 50 employees",2010,"Company - Private","Health Care Services & Hospitals","Health Care","$1 to $5 million (USD)","-1"
+"355",605,"Data Scientist","$80K-$132K (Glassdoor est.)",4,"Lorven Technologies Inc
+4.0","New York, NY","Plainsboro, NJ","1 to 50 employees",-1,"Company - Private","Accounting","Accounting & Legal","Less than $1 million (USD)","-1"
+"356",606,"Data Scientist","$80K-$132K (Glassdoor est.)",4.4,"Meridian Knowledge Solutions
+4.4","Washington, DC","Reston, VA","51 to 200 employees",1997,"Subsidiary or Business Segment","Enterprise Software & Network Solutions","Information Technology","$100 to $500 million (USD)","-1"
+"357",607,"Data Scientist","$80K-$132K (Glassdoor est.)",4.2,"UST Global
+4.2","Atlanta, GA","Aliso Viejo, CA","10000+ employees",1999,"Company - Private","IT Services","Information Technology","$1 to $2 billion (USD)","Cognizant Technology Solutions, Infosys, Wipro"
+"358",608,"Data Scientist","$80K-$132K (Glassdoor est.)",3.2,"IMG Systems
+3.2","Plano, TX","Plano, TX","1 to 50 employees",-1,"Company - Private","Consulting","Business Services","$1 to $5 million (USD)","-1"
+"359",609,"Data Scientist","$80K-$132K (Glassdoor est.)",3.4,"Trident Systems Inc
+3.4","Fairfax, VA","Fairfax, VA","51 to 200 employees",1985,"Company - Private","Aerospace & Defense","Aerospace & Defense","$25 to $50 million (USD)","-1"
+"360",610,"Data Scientist","$80K-$132K (Glassdoor est.)",4.7,"Tygart Technology, Inc
+4.7","Washington, DC","Fairmont, WV","1 to 50 employees",-1,"Company - Private","-1","-1","$1 to $5 million (USD)","-1"
+"361",612,"Senior Data Scientist","$87K-$141K (Glassdoor est.)",4.2,"ManTech
+4.2","Alexandria, VA","Herndon, VA","5001 to 10000 employees",1968,"Company - Public","Research & Development","Business Services","$1 to $2 billion (USD)","-1"
+"362",613,"Data Scientist","$87K-$141K (Glassdoor est.)",-1,"GrainBridge, LLC","Omaha, NE","-1","-1",-1,"-1","-1","-1","-1","-1"
+"363",614,"Data Scientist","$87K-$141K (Glassdoor est.)",3.2,"First Health Group
+3.2","Wellesley, MA","Bethesda, MD","10000+ employees",1853,"Company - Private","Insurance Carriers","Insurance","$10+ billion (USD)","Humana"
+"364",615,"Data Scientist","$87K-$141K (Glassdoor est.)",-1,"Sprezzatura Management Consulting","Washington, VA","McLean, VA","Unknown",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"365",616,"Data Scientist","$87K-$141K (Glassdoor est.)",2.8,"Progress Rail, A Caterpillar Company
+2.8","Fort Worth, TX","Albertville, AL","1001 to 5000 employees",1983,"Subsidiary or Business Segment","Rail","Transportation & Logistics","$2 to $5 billion (USD)","-1"
+"366",617,"Data Scientist","$87K-$141K (Glassdoor est.)",4.2,"UST Global
+4.2","Atlanta, GA","Aliso Viejo, CA","10000+ employees",1999,"Company - Private","IT Services","Information Technology","$1 to $2 billion (USD)","Cognizant Technology Solutions, Infosys, Wipro"
+"367",618,"Data Scientist","$87K-$141K (Glassdoor est.)",4.5,"Axiologic Solutions
+4.5","Alexandria, VA","Fairfax, VA","51 to 200 employees",2009,"Company - Private","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"368",619,"Data Scientist","$87K-$141K (Glassdoor est.)",3,"Indigo Slate
+3.0","Bellevue, WA","Bellevue, WA","51 to 200 employees",2006,"Company - Private","Consulting","Business Services","$10 to $25 million (USD)","-1"
+"369",620,"Data Scientist","$87K-$141K (Glassdoor est.)",3.3,"Cubic
+3.3","United States","San Diego, CA","5001 to 10000 employees",1951,"Company - Public","Aerospace & Defense","Aerospace & Defense","$1 to $2 billion (USD)","Accenture, Northrop Grumman, Xerox"
+"370",621,"Data Scientist","$87K-$141K (Glassdoor est.)",4,"Advanced Bio-Logic Solutions Corp
+4.0","Thousand Oaks, CA","Westlake Village, CA","1 to 50 employees",-1,"Company - Private","-1","-1","Less than $1 million (USD)","-1"
+"371",622,"Data Engineer","$87K-$141K (Glassdoor est.)",3.5,"Alignment Healthcare
+3.5","Orange, CA","Orange, CA","501 to 1000 employees",2013,"Company - Private","Health Care Services & Hospitals","Health Care","Unknown / Non-Applicable","-1"
+"372",623,"Data Scientist","$87K-$141K (Glassdoor est.)",3.5,"WGSN
+3.5","Baltimore, MD","New York, NY","1 to 50 employees",1998,"Company - Private","Consulting","Business Services","$50 to $100 million (USD)","-1"
+"373",624,"Data Scientist","$87K-$141K (Glassdoor est.)",3.6,"ISYS Technologies, Inc.
+3.6","Herndon, VA","Littleton, CO","51 to 200 employees",1990,"Company - Private","Computer Hardware & Software","Information Technology","$10 to $25 million (USD)","-1"
+"374",625,"Data Scientist","$87K-$141K (Glassdoor est.)",3,"TransVoyant
+3.0","Alexandria, VA","Alexandria, VA","51 to 200 employees",2012,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","-1"
+"375",627,"Data Scientist","$87K-$141K (Glassdoor est.)",4.6,"Murray Resources
+4.6","The Woodlands, TX","Houston, TX","1 to 50 employees",1988,"Company - Private","Staffing & Outsourcing","Business Services","$10 to $25 million (USD)","-1"
+"376",628,"Data Scientist","$87K-$141K (Glassdoor est.)",4.3,"Geotab
+4.3","Oakville, CA","Oakville, Canada","1001 to 5000 employees",2000,"Company - Private","Computer Hardware & Software","Information Technology","$100 to $500 million (USD)","-1"
+"377",629,"Data Scientist","$87K-$141K (Glassdoor est.)",4.7,"CRS Group
+4.7","Chicago, IL","Itasca, IL","51 to 200 employees",1994,"Company - Private","Staffing & Outsourcing","Business Services","$10 to $25 million (USD)","-1"
+"378",630,"Data Scientist","$87K-$141K (Glassdoor est.)",3.7,"EGlobalTech
+3.7","Arlington, VA","Vienna, VA","201 to 500 employees",2004,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"379",632,"Data Scientist","$92K-$155K (Glassdoor est.)",4.9,"Avlino
+4.9","New Jersey","Holmdel, NJ","1 to 50 employees",2013,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Less than $1 million (USD)","-1"
+"380",633,"Data Scientist","$92K-$155K (Glassdoor est.)",3,"Central Business Solutions, Inc
+3.0","Seattle, WA","Fremont, CA","51 to 200 employees",-1,"Company - Private","Consulting","Business Services","$5 to $10 million (USD)","-1"
+"381",634,"Data Scientist","$92K-$155K (Glassdoor est.)",2.5,"KeHE Distributors
+2.5","Naperville, IL","Naperville, IL","5001 to 10000 employees",1954,"Company - Private","Wholesale","Business Services","Unknown / Non-Applicable","United Natural Foods, US Foods, DPI Specialty Foods"
+"382",635,"Data Scientist","$92K-$155K (Glassdoor est.)",3.5,"Blackstone Talent Group
+3.5","San Francisco, CA","San Francisco, CA","51 to 200 employees",1998,"Company - Private","Consulting","Business Services","$25 to $50 million (USD)","-1"
+"383",637,"Data Scientist","$92K-$155K (Glassdoor est.)",-1,"Sophinea","Chantilly, VA","-1","1 to 50 employees",-1,"Unknown","-1","-1","Unknown / Non-Applicable","-1"
+"384",638,"Senior Data Scientist","$92K-$155K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"385",639,"Data Scientist","$92K-$155K (Glassdoor est.)",3,"Moxie Software
+3.0","Bellevue, WA","San Bruno, CA","51 to 200 employees",1999,"Company - Private","Enterprise Software & Network Solutions","Information Technology","Unknown / Non-Applicable","LivePerson, Salesforce, SAP"
+"386",641,"Data Scientist","$92K-$155K (Glassdoor est.)",4.7,"Unicom Technologies INC
+4.7","Chicago, IL","Naperville, IL","51 to 200 employees",-1,"Company - Private","IT Services","Information Technology","Unknown / Non-Applicable","-1"
+"387",642,"Data Engineer","$92K-$155K (Glassdoor est.)",3.3,"Americo Life
+3.3","Kansas City, MO","Kansas City, MO","201 to 500 employees",1992,"Company - Private","Insurance Carriers","Insurance","$100 to $500 million (USD)","-1"
+"388",643,"Data Scientist","$92K-$155K (Glassdoor est.)",3.3,"Tokio Marine HCC
+3.3","Houston, TX","Houston, TX","1001 to 5000 employees",1974,"Company - Private","Insurance Carriers","Insurance","Unknown / Non-Applicable","Zurich Insurance, AXA XL, Allianz"
+"389",644,"Data Scientist","$92K-$155K (Glassdoor est.)",3.5,"CACI International
+3.5","Chantilly, VA","Arlington, VA","10000+ employees",1962,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","CSC, ManTech, SAIC"
+"390",646,"Data Scientist","$92K-$155K (Glassdoor est.)",3.5,"Maxar Technologies
+3.5","Herndon, VA","Westminster, CO","5001 to 10000 employees",-1,"Company - Public","Aerospace & Defense","Aerospace & Defense","$2 to $5 billion (USD)","-1"
+"391",648,"Data Scientist","$92K-$155K (Glassdoor est.)",4.7,"Compass Consulting Group
+4.7","Thousand Oaks, CA","Danville, CA","51 to 200 employees",2008,"Company - Private","Consulting","Business Services","Unknown / Non-Applicable","-1"
+"392",652,"Senior Data Scientist","$105K-$167K (Glassdoor est.)",3.8,"GutCheck
+3.8","Denver, CO","Denver, CO","51 to 200 employees",2009,"Company - Private","Advertising & Marketing","Business Services","$10 to $25 million (USD)","Nielsen, Zappi, SurveyMonkey"
+"393",654,"Data Scientist","$105K-$167K (Glassdoor est.)",2.7,"Hexagon US Federal
+2.7","Lexington Park, MD","Chantilly, VA","51 to 200 employees",2010,"Company - Public","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"394",655,"Data Scientist","$105K-$167K (Glassdoor est.)",4,"Comtech Global Inc
+4.0","Washington, DC","Columbus, OH","51 to 200 employees",-1,"Company - Private","Health, Beauty, & Fitness","Consumer Services","$5 to $10 million (USD)","-1"
+"395",656,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"Berico Technologies","Fort Belvoir, VA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"396",657,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"Kehe Food Distributors","Naperville, IL","-1","-1",-1,"-1","-1","-1","-1","-1"
+"397",658,"Data Scientist","$105K-$167K (Glassdoor est.)",3.8,"Aveshka, Inc.
+3.8","Washington, DC","Arlington, VA","51 to 200 employees",2010,"Company - Public","IT Services","Information Technology","$10 to $25 million (USD)","-1"
+"398",659,"Data Scientist","$105K-$167K (Glassdoor est.)",3.2,"Perspecta
+3.2","Adelphi, MD","Chantilly, VA","10000+ employees",2018,"Company - Public","Aerospace & Defense","Aerospace & Defense","Unknown / Non-Applicable","-1"
+"399",660,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"Pactera Edge","Redmond, WA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"400",661,"Data Scientist","$105K-$167K (Glassdoor est.)",3.6,"Qurate Retail Group
+3.6","West Chester, PA","West Chester, PA","10000+ employees",-1,"Company - Public","Other Retail Stores","Retail","Unknown / Non-Applicable","-1"
+"401",662,"Data Scientist","$105K-$167K (Glassdoor est.)",4.4,"SolutionIT, Inc.
+4.4","Edison, NJ","Wilmington, MA","51 to 200 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"402",663,"Data Scientist","$105K-$167K (Glassdoor est.)",4.1,"A-Line Staffing Solutions
+4.1","Durham, NC","Utica, MI","501 to 1000 employees",2004,"Company - Private","Staffing & Outsourcing","Business Services","Unknown / Non-Applicable","-1"
+"403",664,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"Clear Ridge Defense","Quantico, VA","Baltimore, MD","1 to 50 employees",-1,"Company - Private","-1","-1","Unknown / Non-Applicable","-1"
+"404",665,"Data Scientist","$105K-$167K (Glassdoor est.)",3.8,"Criterion Systems, Inc.
+3.8","Vienna, VA","Vienna, VA","201 to 500 employees",2005,"Company - Private","IT Services","Information Technology","$50 to $100 million (USD)","-1"
+"405",666,"Data Scientist","$105K-$167K (Glassdoor est.)",4,"Foundation Medicine
+4.0","Boston, MA","Cambridge, MA","1001 to 5000 employees",2010,"Company - Public","Biotech & Pharmaceuticals","Biotech & Pharmaceuticals","$100 to $500 million (USD)","Genomic Health, Myriad Genetics, The Broad Institute"
+"406",667,"Data Scientist","$105K-$167K (Glassdoor est.)",3.6,"TRANZACT
+3.6","Fort Lee, NJ","Fort Lee, NJ","1001 to 5000 employees",1989,"Company - Private","Advertising & Marketing","Business Services","Unknown / Non-Applicable","-1"
+"407",668,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"JKGT","San Francisco, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"408",669,"Data Scientist","$105K-$167K (Glassdoor est.)",-1,"AccessHope","Irwindale, CA","-1","-1",-1,"-1","-1","-1","-1","-1"
+"409",670,"Data Scientist","$105K-$167K (Glassdoor est.)",5,"ChaTeck Incorporated
+5.0","San Francisco, CA","Santa Clara, CA","1 to 50 employees",-1,"Company - Private","Advertising & Marketing","Business Services","$1 to $5 million (USD)","-1"
+"410",671,"Data Scientist","$105K-$167K (Glassdoor est.)",2.7,"1-800-Flowers
+2.7","New York, NY","Carle Place, NY","1001 to 5000 employees",1976,"Company - Public","Wholesale","Business Services","$1 to $2 billion (USD)","-1"
