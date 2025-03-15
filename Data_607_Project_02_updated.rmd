@@ -1,0 +1,1187 @@
+---
+title: "Data 607 Project 02"
+author: "Md. Tanzil Ehsan"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Install zoo if not already installed
+if (!requireNamespace("zoo", quietly = TRUE)) {install.packages("zoo")}
+if (!requireNamespace("tidyverse", quietly = TRUE)) {install.packages("tidyverse")}
+if (!requireNamespace("skimr", quietly = TRUE)) install.packages("skimr")
+if (!requireNamespace("corrplot", quietly = TRUE)) install.packages("corrplot")
+
+```
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(zoo)
+library(skimr)   # For quick summary
+library(corrplot) # For correlation heatmap
+library(stringr) 
+library(readxl)
+library(readr)
+library(dplyr)
+library(tinytex)
+library(ggplot2)
+```
+
+
+
+Data_1:  Airline_Delay_Cause
+Data has been taken from :https://www.kaggle.com/datasets/sriharshaeedala/airline-delay.
+Data has been taken up-to year 2015.
+We will analyze data and try to find out the reasons for a poor performances.
+Lastly  we will save the data.
+
+
+
+```{r}
+
+file  <- 'https://raw.githubusercontent.com/tanzil64/Data-607-Project-02/refs/heads/main/Airline_Delay_Cause%20-%20Cleaned.csv'
+
+Airline_Delay_Cause <- read.csv(file)
+head(Airline_Delay_Cause)
+
+```
+```{r}
+# Check the structure of the dataset to see data types and sample values
+str(Airline_Delay_Cause)
+
+```
+```{r}
+# Check for missing (null) values in each column
+null_counts <- sapply(Airline_Delay_Cause, function(x) sum(is.na(x)))
+print(null_counts)
+```
+
+```{r}
+# Get a summary of the data for a quick look at distributions and potential issues
+summary(Airline_Delay_Cause)
+```
+
+
+`
+```{r}
+# Trim whitespace in character columns if necessary
+Airline_Delay_Cause <- Airline_Delay_Cause %>%
+  dplyr::mutate(across(where(is.character), ~ trimws(.)))
+```
+
+
+
+
+Checck Data
+
+
+```{r}
+head(Airline_Delay_Cause)
+
+```
+
+
+
+
+
+```{r}
+ # Create a date column using the "year" and "Month" columns (set day to "01")
+# Using sprintf to ensure Month is formatted with two digits (e.g., "01" for January)
+Airline_Delay_Cause$date <- as.Date(with(Airline_Delay_Cause, paste(year, sprintf("%02d", month), "01", sep = "-")), format = "%Y-%m-%d")
+
+# Arrange the data by date (optional, but helps with time series)
+df <- Airline_Delay_Cause %>% arrange(date)
+
+# 2. Fill missing values in 'arr_flights' with the median value
+median_arr_flights <- median(df$arr_flights, na.rm = TRUE)
+df$arr_flights[is.na(df$arr_flights)] <- median_arr_flights
+
+# 3. Plot the trend of 'arr_flights' over time using ggplot2
+ggplot(df, aes(x = date, y = arr_flights)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "green", size = 0.5) +
+  geom_smooth(method = "loess", se = FALSE, color = "red") +
+  labs(title = "Trend of Arrival Flights Over Time",
+       x = "Time",
+       y = "Number of Arrival Flights") +
+  theme_minimal()
+
+
+```
+
+##Insight: Carrier Delays: Shows a steady increase after 2018, with a dip around 2020, likely due to the pandemic's effect on flight operations.
+
+
+```{r}
+#Aggregate by month: Summing 'arr_flights' for each month
+monthly_df <- df %>%
+  group_by(year = year(date), month = month(date)) %>%
+  #computes the total arriving flights per month.
+  summarise(arr_flights = sum(arr_flights, na.rm = TRUE)) %>%
+  ungroup() %>%
+  #converts the grouping back into a proper date column.
+  mutate(date = as.Date(paste(year, month, "01", sep = "-")))
+
+# Plot the aggregated monthly sum of arrival flights over time
+ggplot(monthly_df, aes(x = date, y = arr_flights)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "red", size = 1) +
+  labs(title = "Monthly Sum of Arrival Flights Over Time",
+       x = "Time",
+       y = "Number of Arrival Flights") +
+  theme_minimal()
+```
+```{r}
+# Calculate the average arrival delay per carrier
+average_delay_per_carrier <- df %>%
+  group_by(carrier_name) %>%
+  summarise(avg_arr_delay = mean(arr_delay, na.rm = TRUE)) %>%
+  arrange(avg_arr_delay)  # Sort in ascending order
+
+# Print the result
+print(average_delay_per_carrier)
+```
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# Filter data for the year 2023 and airport ABE
+df_2023_ABE <- df%>%
+  filter(year == 2023, airport == "ABE")
+
+# Summarize data by carrier_name
+df_summary_2023_ABE <- df_2023_ABE %>%
+  group_by(carrier_name) %>%
+  summarise(total_delays = sum(arr_del15, na.rm = TRUE)) %>%
+  ungroup()
+
+# Create a bar chart
+ggplot(df_summary_2023_ABE, aes(x = carrier_name, y = total_delays, fill = carrier_name)) +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(title = "Total Delays by Carrier at ABE Airport in 2023",
+       x = "Carrier Name",
+       y = "Total Delays",
+       fill = "Carrier Name")
+
+```
+
+#Insight:Alegant Air has most delays in ABE airport.
+
+```{r}
+# Calculate total delays and percentage of each delay type
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Calculate total delays, percentage of each delay type, and frequency
+df_delay_analysis <- df %>%
+  summarise(
+    total_delay = sum(arr_delay, na.rm = TRUE),
+    freq_carrier_delay = sum(carrier_ct, na.rm = TRUE),
+    freq_weather_delay = sum(weather_ct, na.rm = TRUE),
+    freq_nas_delay = sum(nas_ct, na.rm = TRUE),
+    freq_security_delay = sum(security_ct, na.rm = TRUE),
+    freq_late_aircraft_delay = sum(late_aircraft_ct, na.rm = TRUE),
+    percent_carrier_delay = sum(carrier_delay, na.rm = TRUE) / total_delay * 100,
+    percent_weather_delay = sum(weather_delay, na.rm = TRUE) / total_delay * 100,
+    percent_nas_delay = sum(nas_delay, na.rm = TRUE) / total_delay * 100,
+    percent_security_delay = sum(security_delay, na.rm = TRUE) / total_delay * 100,
+    percent_late_aircraft_delay = sum(late_aircraft_delay, na.rm = TRUE) / total_delay * 100
+  )
+
+# Reshape the data for plotting
+df_delay_analysis_long <- df_delay_analysis %>%
+  pivot_longer(cols = -total_delay, names_to = "metric", values_to = "value") %>%
+  separate(metric, into = c("type", "delay_type"), sep = "_", extra = "merge") %>%
+  pivot_wider(names_from = type, values_from = value)
+
+# Plot total delay, percentage delays, and frequency with connected dots
+ggplot(df_delay_analysis_long, aes(x = delay_type)) +
+  geom_bar(aes(y = percent, fill = delay_type), stat = "identity", position = "dodge") +
+  geom_point(aes(y = freq / max(df_delay_analysis_long$freq) * 100), color = "red", size = 3) +
+  geom_line(aes(y = freq / max(df_delay_analysis_long$freq) * 100, group = 1), color = "red") +
+  labs(title = paste("Total Delay:", df_delay_analysis$total_delay, "minutes"),
+       x = "Delay Type", y = "Percentage of Total Delay / Frequency (scaled)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+ Insight:Carrier Delays:
+1)Carrier  & aircraft Delays are the most significant.
+2)Weather Delays: Exhibits significant variability, influenced by seasonal weather conditions and not tied directly to flight volume trends.
+3)NAS Delays has an average significance. 
+4)Security Delays: Generally low significance
+
+
+
+
+ Long Data
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+pacman::p_load(tidyr)
+
+# Transform the dataset into a long format for numeric delay columns
+data_long <- df %>%
+  pivot_longer(cols = c(carrier_delay, weather_delay, nas_delay, security_delay, late_aircraft_delay),
+               names_to = "delay_type",
+               values_to = "delay_value")
+
+# Print a small part of the transformed dataset
+print(head(data_long))
+
+
+```
+
+```{r }
+library(ggplot2)
+if(!require('DataExplorer')) {
+  install.packages('DataExplorer')
+  library('DataExplorer')
+}
+plot_bar(data_long)
+```
+
+
+Insight :Skywest airline has the most delays in minutes.Now if we would  to find out the reasons behind the poor performances of the sky west.Lets take the data for only year 2023.
+
+```{r}
+# Filter the data frame to keep only SkyWest Airlines Inc.
+df_2023_skywest <- df[df$carrier_name == "SkyWest Airlines Inc.", ]
+
+# Display the first few rows of the filtered data frame
+head(df_2023_skywest)
+```
+
+
+```{r}
+# Filter the data frame to keep only the rows for the year 2023
+df_2023 <- df[df$year == 2023, ]
+
+# Display the first few rows of the filtered data frame
+head(df_2023)
+```
+```{r}
+# Filter the data frame to keep only SkyWest Airlines Inc.
+df_2023_no_skywest <- df[df$carrier_name != "SkyWest Airlines Inc.", ]
+
+# Display the first few rows of the filtered data frame
+head(df_2023_no_skywest)
+```
+
+
+
+```{r}
+# Calculate medians for df_2023_no_skywest
+medians_no_skywest <- df_2023_no_skywest %>%
+  summarise(across(c("arr_flights", "arr_del15", "carrier_ct", "weather_ct", 
+                     "nas_ct", "security_ct", "late_aircraft_ct", "arr_cancelled", 
+                     "arr_diverted", "arr_delay", "carrier_delay", "weather_delay", 
+                     "nas_delay", "security_delay", "late_aircraft_delay"), median, na.rm = TRUE))
+
+# Calculate medians for df_2023_skywest
+medians_skywest <- df_2023_skywest %>%
+  summarise(across(c("arr_flights", "arr_del15", "carrier_ct", "weather_ct", 
+                     "nas_ct", "security_ct", "late_aircraft_ct", "arr_cancelled", 
+                     "arr_diverted", "arr_delay", "carrier_delay", "weather_delay", 
+                     "nas_delay", "security_delay", "late_aircraft_delay"), median, na.rm = TRUE))
+
+# Combine medians into a single data frame for plotting
+medians_combined <- bind_rows(
+  mutate(medians_no_skywest, Carrier = "No SkyWest"),
+  mutate(medians_skywest, Carrier = "SkyWest")
+)
+
+# Convert to long format for ggplot
+medians_long <- pivot_longer(medians_combined, -Carrier, names_to = "Variable", values_to = "Median")
+
+# Plot the medians using ggplot2
+ggplot(medians_long, aes(x = Variable, y = Median, fill = Carrier)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Comparison of Medians: No SkyWest vs SkyWest (2023)", y = "Median Value")
+
+```
+
+
+Conclusion:
+We have compare the skyline west data with the median of all other airline.The graph shows that arrival delay and the career delay are  the main reasons for the poor performances of Skyline west airlines.For  others reasons this airline is pretty much similar with the other airlines.
+
+
+
+
+
+
+
+
+
+
+Data_2#Cheese_data
+
+
+```{r}
+path1 <- "C:/Users/tanzi/OneDrive/DATA/607/week6/tanzil_airline_delay.csv"
+write.csv(data_long, path1)
+```
+
+
+
+Data_2_Cheese Data
+Chesse Data has been taken from :Discussion 05.
+We will analyze data and try to find out correlations.
+Lastly  we will save the data.
+
+
+
+```{r}
+file  <- 'https://raw.githubusercontent.com/tanzil64/Data-607-Project-02/refs/heads/main/cheeses.csv'
+
+data <- read.csv(file)
+
+cheese_df <-data.frame(data)
+head(cheese_df)
+```
+
+```{r}
+# Check column names and structure
+str(cheese_df)
+
+# Summary statistics of numerical columns
+summary(cheese_df)
+
+# Check for missing values
+colSums(is.na(cheese_df))
+```
+
+```{r}
+ #Convert categorical columns to factors
+cheese_df <- cheese_df %>%
+  mutate(across(where(is.character), as.factor))
+```
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Assuming df is already loaded in the environment
+
+# Clean and prepare the data
+df_clean <- data %>%
+  mutate(fat_content = as.numeric(gsub(" g/100g|%", "", fat_content))) %>%
+  filter(!is.na(fat_content))
+
+# Plotting milk type vs fat content
+ggplot(df_clean, aes(x = milk, y = fat_content, fill = milk)) +
+  geom_boxplot() +
+  labs(title = "Fat Content by Milk Type", x = "Milk Type", y = "Fat Content (%)") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Assuming df is already loaded in the environment
+
+# Group by color and milk, filter out NA values, and summarize the count of cheeses
+df_color_milk_summary <- df_clean %>%
+  filter(!is.na(color) & !is.na(milk)) %>%
+  group_by(color, milk) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+
+# Plotting the count of cheeses by color and milk type
+ggplot(df_color_milk_summary, aes(x = reorder(color, -count), y = count, fill = milk)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Count of Cheeses by Color and Milk Type", x = "Color", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust =1))
+
+```
+
+
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Assuming df is already loaded in the environment
+
+# Filter for rows where milk includes 'cow', 'sheep', or 'goat', group by milk, and summarize the count of cheeses
+df_selected_milk_summary <- df_clean %>%
+  filter(grepl("cow|sheep|goat", milk, ignore.case = TRUE) & !is.na(milk)) %>%
+  group_by(milk) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+
+# Plotting the count of cheeses by milk type with numbers and connecting lines
+ggplot(df_selected_milk_summary, aes(x = reorder(milk, -count), y = count, group = 1)) +
+  geom_bar(stat = "identity", aes(fill = milk), position = "dodge") +
+  geom_text(aes(label = count), vjust = -0.5) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Count of Cheeses by Milk Type (Cow, Sheep, Goat)", x = "Milk Type", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
+```
+
+```{r}
+head(df_clean)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+# Remove United States data from the original data frame
+df_clean$fat_content <- as.numeric(gsub("%", "", df_clean$fat_content))
+
+# Separate data for United States
+usa_df <- df_clean[df_clean$country == "United States", ]
+head(usa_df)
+```
+
+
+
+```{r}
+# Remove United States data from the original data frame
+df_filtered <- df_clean[df_clean$country != "United States", ]
+head(df_filtered)
+```
+
+```{r}
+# Convert fat content to numeric, removing the percentage sign
+df_clean$fat_content <- as.numeric(gsub("%", "", df_clean$fat_content))
+
+# Calculate the mean fat content for USA and other countries
+mean_fat_content_consumption <- data.frame(
+  Country = c("USA", "Other"),
+  MeanFatContent = c(
+    mean(df_clean[df_clean$country == "United States", ]$fat_content, na.rm = TRUE),
+    mean(df_clean[df_clean$country != "United States", ]$fat_content, na.rm = TRUE)
+  )
+)
+
+# Display the mean fat content consumption
+print(mean_fat_content_consumption)
+
+# Plot the mean fat content consumption comparison with numbers in the plot
+library(ggplot2)
+ggplot(mean_fat_content_consumption, aes(x = Country, y = MeanFatContent, fill = Country)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(MeanFatContent, 2)), vjust = -0.5) +
+  labs(title = "Mean Fat Content Consumption: USA vs Other Countries", x = "Country", y = "Mean Fat Content") +
+  theme_minimal()
+
+```
+
+
+
+
+
+
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+
+# Analyze the most consumed cheese by country and select top 5 countries
+top_countries_cheese <- df_clean %>%
+  group_by(country) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count)) %>%
+  slice_head(n = 5)
+
+# Plot the most consumed cheese by top 5 countries using ggplot2 with numbers on bars
+ggplot(top_countries_cheese, aes(x = reorder(country, -count), y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = count), vjust = -0.5) +
+  coord_flip() +
+  labs(title = "Most Consumed Cheese by Top 5 Countries", x = "Country", y = "Count") +
+  theme_minimal()
+```
+
+
+
+
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+
+# Filter and analyze the top 15 cheese consumption by USA
+top_usa_cheese <- df_clean %>%
+  filter(country == "United States") %>%
+  group_by(cheese) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count)) %>%
+  slice_head(n = 15)
+
+# Plot the top 15 cheese consumption in the USA using ggplot2
+ggplot(top_usa_cheese, aes(x = reorder(cheese, -count), y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = count), vjust = -0.5) +
+  coord_flip() +
+  labs(title = "Top 15 Cheese Consumption in the USA", x = "Cheese", y = "Count") +
+  theme_minimal()
+```
+
+
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# Assuming df is your data frame
+# Filter for cheeses from the USA and with non-missing fat content
+usa_cheese <- df_clean %>%
+  filter(country == "United States" & !is.na(fat_content))
+
+# Convert fat_content to numeric if it's not already
+usa_cheese$fat_content <- as.numeric(sub("%", "", usa_cheese$fat_content))
+
+# Summarize the data to get the number of occurrences of each cheese
+cheese_summary <- usa_cheese %>%
+  group_by(producers) %>%
+  summarise(count = n(), avg_fat_content = mean(fat_content, na.rm = TRUE)) %>%
+  arrange(desc(count))
+
+# Select the top 15 most consumed cheeses
+top_15_cheeses <- cheese_summary %>%
+  top_n(15, count)
+
+# Plot the data
+ggplot(top_15_cheeses, aes(x = reorder(producers, -count), y = avg_fat_content)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Top 15 Most Consumed Cheeses in the USA with Fat Content",
+       x = "producers",
+       y = "Average Fat Content (%)") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+As the Guggisberg Cheese,Egg Farm Dairy,Shelburne Farms produced cheese have much higher(more than the medean 18.25) fat content  than other other producers we can say that American do not like these producers cheese.Lets see what the common phenomean of thses producers cheese.
+
+```{r}
+# Assuming df is already loaded in the environment
+
+# Filter the data for common entries between Guggisberg Cheese, Egg Farm Dairy, and Shelburne Farms
+common_data <- df_clean %>%
+  filter(producers %in% c("Guggisberg Cheese", "Egg Farm Dairy", "Shelburne Farms"))
+
+# Display the common data
+print(common_data)
+
+```
+
+
+Conclusions: We see that Americans dont like the high fat content,rindless,rich aromatic cheese those mostly produced from the cow.It can be useful data who want to introduce a new product or wnat to have growth in there sell.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+path1 <- "C:/Users/tanzi/OneDrive/DATA/607/week6/tanzil_cheese_data.csv"
+write.csv(df_clean, path1)
+```
+
+```{r}
+# Load dataset
+
+
+df <-'https://raw.githubusercontent.com/tanzil64/Data-607-Project-02/refs/heads/main/Uncleaned_DS_jobs.csv'
+df <- read.csv(df)
+
+
+
+
+
+
+# Display first few rows
+head(df)
+```
+
+```{r}
+# Rename "Salary Estimate" to "Salary_Estimate"
+df <- df %>%
+  rename(Salary_Estimate = `Salary.Estimate`,
+         Job_Title =`Job.Title`,
+         Job_Description = `Job.Description`,
+         Company = `Company.Name`,
+         Ownership_Type=  `Type.of.ownership`
+         
+         
+         )
+
+# Verify the column name change
+colnames(df)
+```
+```{r}
+# View column names and structure
+str(df)
+```
+```{r}
+# Summary statistics of numerical columns
+summary(df)
+```
+
+```{r}
+# Get an overview of the dataset
+skim(df)
+```
+
+```{r}
+# Check for missing values
+colSums(is.na(df))
+```
+
+
+
+Salary Column
+
+```{r}
+# Extract min and max salary values from Salary_Estimate column
+df <- df %>%
+  mutate(
+    salary_usd_min_K = as.numeric(str_extract(Salary_Estimate, "\\d+")),  # Extract first numeric value
+    salary_usd_max_K = as.numeric(str_extract_all(Salary_Estimate, "\\d+") %>% sapply(`[`, 2))  # Extract second numeric value
+  )
+
+# Compute average salary in USD (thousands)
+df <- df %>%
+  mutate(
+    av_salary_usd_K = (salary_usd_min_K + salary_usd_max_K ) / 2  # Calculate mean of min and max salary
+  )
+# Display first few rows to verify
+head(df)
+```
+
+
+
+```{r}
+#remove duplicate
+df <- df %>% distinct()
+```
+
+
+
+
+```{r}
+# Boxplot to check outliers
+ggplot(df, aes(y = av_salary_usd_K)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Boxplot of Salaries") +
+  theme_minimal()
+```
+
+
+```{r}
+# Convert categorical columns to factors
+df <- df %>%
+  mutate(across(where(is.character), as.factor))
+```
+
+
+
+Data Cleaning
+```{r}
+# Function to determine experience level based on job title
+get_experience_level <- function(title) {
+  title <- tolower(title)  # Convert to lowercase for case-insensitive matching
+  
+  if (str_detect(title, "senior") | str_detect(title, "lead") |str_detect(title, "sr")) {
+    return("Senior")  # If "senior" or "lead" is in title → Senior
+  } else if (str_detect(title, "junior")) {
+    return("Junior")  # If "junior" is in title → Junior
+  } else {
+    return("Mid-level")  # Otherwise, classify as Mid-level
+  }
+}
+
+# Apply function to the Job Title column and create new Experience_Level column
+df <- df %>%
+  mutate(Experience_Level = sapply(Job_Title, get_experience_level))
+
+# Show the first few rows of Job_Title and Experience_Level columns
+head(df[, c("Job_Title", "Experience_Level")])
+
+```
+
+```{r}
+# Count plot for Experience_Level
+ggplot(df, aes(x = Experience_Level)) +
+  geom_bar(fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Count of Data Science Job Titles", x = "Job Title", y = "Count") +
+  theme_minimal()
+```
+Job_Title cleaning
+
+
+```{r}
+# Function to simplify job titles
+title_simplifier <- function(title) {
+  title <- tolower(title)  # Convert to lowercase for consistent matching
+  
+  case_when(
+    str_detect(title, "data scientist") ~ "data scientist",
+    str_detect(title, "data engineer") ~ "data engineer",
+    str_detect(title, "analyst") ~ "analyst",
+    str_detect(title, "machine learning") ~ "mle",  # Maps 'machine learning' to 'mle'
+    str_detect(title, "manager") ~ "manager",
+    str_detect(title, "director") ~ "director",
+    TRUE ~ "Other"  # Default case for unmatched titles
+  )
+}
+# Apply function to 'Job_Title' column and create a new column 'Simplified_Title'
+df <- df %>%
+  mutate(JobTitle = sapply(Job_Title, title_simplifier))
+
+# Display first few rows to verify
+head(df[, c("Job_Title", "JobTitle")])
+```
+
+
+
+```{r}
+
+```
+```{r}
+# Function to extract skills from job description
+extract_skills <- function(description) {
+  skills <- c("Python", "R", "SQL", "Java", "C++", "Scala", "Julia")
+  found_skills <- skills[str_detect(tolower(description), tolower(skills))]
+  return(ifelse(length(found_skills) > 0, paste(found_skills, collapse = ", "), NA))
+}
+
+# Function to extract education levels from job description
+extract_education <- function(description) {
+  education_levels <- c("Bachelor", "Master", "PhD", "Doctorate")
+  found_education <- education_levels[str_detect(tolower(description), tolower(education_levels))]
+  return(ifelse(length(found_education) > 0, paste(found_education, collapse = ", "), NA))
+}
+
+# Function to extract years of experience from job description (Handles NAs properly)
+extract_experience <- function(description) {
+  experience <- str_extract(description, "(\\d+)\\+?\\s*(?:year|yr)s?")
+  return(ifelse(is.na(experience), NA, as.numeric(experience)))  # Ensure NA remains NA
+}
+
+# Apply the functions to the 'Job_Description' column and create new columns
+df <- df %>%
+  mutate(
+    Skills = sapply(Job_Description, extract_skills),         # Extract skills
+    Education = sapply(Job_Description, extract_education),   # Extract education levels
+    Years_Experience = sapply(Job_Description, extract_experience)  # Extract experience, avoid coercion warning
+  )
+```
+
+
+
+```{r}
+# Clean 'Company Name' column by keeping only the first part before "\n"
+df <- df %>%
+  mutate(Company_Name = str_split_fixed(Company, "\n", 2)[, 1])
+
+# Display first few rows to verify
+head(df$Company_Name)
+```
+
+
+
+
+```{r}
+# Load necessary libraries
+library(stringr)
+
+# Split 'Location' column into 'City' and 'State'
+df <- df %>%
+  mutate(
+    State = str_split_fixed(Location, ", ", 2)[, 2],  # Extract last part (State)
+    City  = str_split_fixed(Location, ", ", 2)[, 1]   # Extract first part (City)
+  )
+
+# Display first few rows to verify
+head(df[, c("Location", "City", "State")])
+```
+```{r}
+# Function to standardize the 'Size' column
+standardize_size <- function(size) {
+  # Handle missing values or invalid input ('-1')
+  if (is.na(size) || size == "-1") {
+    return(NA)  # Return NA for missing or invalid sizes
+  }
+  
+  # Handle sizes with '+' indicating a range like '10000+ employees'
+  if (str_detect(size, "\\+")) {
+    return(str_extract(size, "\\d+") %>% paste0("+"))  # Convert to '10000+'
+  }
+  
+  # Handle size ranges formatted as '51 to 200 employees'
+  if (str_detect(size, "to")) {
+    size_values <- str_extract_all(size, "\\d+")[[1]]  # Extract numeric values
+    return(paste(size_values[1], size_values[2], sep = "-"))  # Convert to '51-200'
+  }
+  
+  # Return the size as is if no special formatting is needed
+  return(size)
+}
+
+# Apply the standardize_size function to the 'Size' column
+df <- df %>%
+  mutate(Size = sapply(Size, standardize_size))
+
+# Display first few rows to verify
+head(df$Size)
+```
+```{r}
+# Define the current year
+current_year <- 2025  
+
+# Calculate company age
+df <- df %>%
+  mutate(Age = current_year - Founded)
+
+# Replace invalid ages (e.g., future-dated Founded years) with NA
+df <- df %>%
+  mutate(Age = ifelse(Age == (current_year + 1), NA, Age))
+
+# Display first few rows to verify
+head(df[, c("Founded", "Age")])
+```
+
+```{r}
+# Remove the prefix "Company - " from 'Type of ownership' column
+df <- df %>%
+  mutate(Type_of_ownership = str_replace(Ownership_Type, "^Company - ", ""))
+
+# Display first few rows to verify
+head(df$Type_of_ownership)
+```
+
+```{r}
+# Standardize 'Industry' and 'Sector' columns to title case
+df <- df %>%
+  mutate(
+    Industry = str_to_title(Industry),
+    Sector = str_to_title(Sector)
+  )
+
+# Display first few rows to verify
+head(df[, c("Industry", "Sector")])
+```
+
+```{r}
+# Function to clean and standardize revenue values
+clean_revenue <- function(revenue) {
+  # Handle missing values or invalid revenue indicators
+  if (is.na(revenue) || revenue == "-1") {
+    return(NA)  # Return NA for missing or invalid values
+  }
+  
+  # Extract all numerical values from the revenue string
+  numbers <- as.numeric(str_extract_all(revenue, "\\d+")[[1]])
+  
+  # Check if 'million' is mentioned in the revenue string
+  if (str_detect(tolower(revenue), "million")) {
+    bounds <- numbers * 1e6  # Convert to millions
+  } 
+  # Check if 'billion' is mentioned in the revenue string
+  else if (str_detect(tolower(revenue), "billion")) {
+    bounds <- numbers * 1e9  # Convert to billions
+  } 
+  else {
+    return(NA)  # Return NA if neither 'million' nor 'billion' is found
+  }
+  
+  # If there are two numbers (indicating a revenue range), calculate the average
+  if (length(bounds) == 2) {
+    return(mean(bounds))  # Return the average of the two bounds
+  } 
+  else if (length(bounds) == 1) {
+    return(bounds[1])  # If only one number is found, return it as revenue
+  }
+  
+  return(NA)  # Return NA if no valid numbers are found
+}
+
+# Apply the clean_revenue function to the 'Revenue' column and create a new column 'AverageRevenue'
+df <- df %>%
+  mutate(AverageRevenue = sapply(Revenue, clean_revenue))
+
+# Display first few rows to verify
+head(df[, c("Revenue", "AverageRevenue")])
+
+```
+
+```{r}
+df <- df %>% mutate(across(where(is.character), ~ na_if(., 'Unknown')))
+```
+
+```{r}
+# Convert 'Rating' column to numeric for numerical analysis
+df$Rating <- as.numeric(df$Rating)
+
+# Convert 'Founded' column to integer to represent the founding year
+df$Founded <- as.integer(df$Founded)
+
+# List of categorical columns to convert
+categorical_columns <- c('Job_Title', 'Company_Name', 'Location', 'Type_of_ownership', 'Industry', 'Sector')
+
+# Loop through each categorical column and convert its data type to factor (category)
+for (col in categorical_columns) {
+  df[[col]] <- as.factor(df[[col]])  # Convert to factor for memory efficiency and analysis
+}
+
+```
+
+```{r}
+colnames(df)
+```
+
+```{r}
+# Remove specified columns from the dataframe
+df <- df[, !(names(df) %in% c('Job_Title','Job_Description', 'Location', 'Headquarters', 'Revenue','Competitors','Salary_Estimate', 'index','Ownership_Type'))]
+colnames(df)
+```
+```{r}
+# Define bins and corresponding labels
+labels <- c('Low', 'Medium', 'High', 'Very High')  # 4 labels
+
+# Create bins for the 'avg_salary' column and assign labels
+df$SalaryCategory <- cut(df$av_salary_usd_K, 
+                         breaks = 4,           # Create 4 intervals
+                         labels = labels,      # Assign labels
+                         right = FALSE)        # Include the left endpoint, excluding the right one
+
+```
+
+
+
+
+
+```{r}
+# Ensure 'Education' column is a list-column before unnesting
+# Ensure 'Education' column is a list-column before unnesting
+df <- df %>%
+  mutate(Education = strsplit(as.character(Education), ", "))  # Convert to list
+
+# Exploding (unnesting) the 'Education' column
+df_exploded <- df %>%
+  unnest(Education) %>%
+  filter(!is.na(Education) & Education != "")  # Remove NA or empty values
+
+
+# Convert 'Education' and 'Experience_Level' to factors for proper ordering
+df_exploded <- df_exploded %>%
+  mutate(
+    Education = factor(Education, levels = c("Bachelor", "Master", "PhD", "Doctorate")),
+    Experience_Level = factor(Experience_Level, levels = c("Junior", "Mid-level", "Senior"))
+  )
+
+# Create the grouped bar chart
+ggplot(df_exploded, aes(x = Education, y = av_salary_usd_K, fill = Experience_Level)) +
+  geom_bar(stat = "identity", position = "dodge") +  # Create grouped bars
+  labs(x = "Education Level", 
+       y = "Average Salary (USD K)", 
+       title = "Average Salary by Education and Experience Level", 
+       fill = "Experience Level") +  # Labels and title
+  theme_minimal() +  # Apply minimal theme for cleaner look
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
+    plot.title = element_text(hjust = 0.5)  # Center the title
+  )
+
+```
+
+
+
+
+
+
+```{r}
+ #Create the box plot for salary ranges by job title
+ggplot(df_exploded, aes(x = JobTitle, y = av_salary_usd_K)) +
+  geom_boxplot(fill = "steelblue", alpha = 0.7) +  # Boxplot with transparency
+  labs(title = "Salary Ranges by Job Title",
+       x = "Job Title",
+       y = "Average Salary (K USD)") +
+  theme_minimal() +  # Clean theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+```
+
+
+
+
+
+```{r}
+# Find the top 5 most common job titles
+top_jobs <- df_exploded %>%
+  count(JobTitle, sort = TRUE) %>%  # Count occurrences
+  top_n(5, n)  # Select top 5 job titles
+
+# Calculate the median salary for each top job title
+median_salaries <- df_exploded %>%
+  group_by(JobTitle) %>%
+  summarise(Median_Salary = median(av_salary_usd_K, na.rm = TRUE)) %>%
+  filter(JobTitle %in% top_jobs$JobTitle)  # Filter only top job titles
+
+# Merge top_jobs and median_salaries
+top_jobs_salary <- inner_join(top_jobs, median_salaries, by = "JobTitle")
+
+# Print the table of most common job titles and their median salaries
+print(top_jobs_salary)
+
+# Visualization: Bar chart of most common job titles and their median salaries
+ggplot(top_jobs_salary, aes(x = reorder(JobTitle, n), y = Median_Salary, fill = JobTitle)) +
+  geom_col(show.legend = FALSE) +  # Bar plot
+  geom_text(aes(label = round(Median_Salary, 1)), vjust = -0.5, size = 4) +  # Add labels
+  labs(title = "Most Common Job Titles and Their Median Salaries",
+       x = "Job Title",
+       y = "Median Salary (K USD)") +
+  theme_minimal() +  # Clean theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels for readability
+
+```
+
+
+
+```{r}
+plot_histogram(df) 
+```
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+
+
+# Filter the data to keep the top 10 companies with the highest average salary
+top_companies <- df %>%
+  arrange(desc(salary_usd_max_K)) %>%
+  slice(1:10)
+
+# Display the result as a data table
+top_companies
+```
+
+```{r}
+summary(top_companies)
+```
+
+
+```{r}
+head(top_companies)
+```
+
+We see that the data scientist role is the common for all fo the companies.Lets Mr. X wanna join in any one of the companises.His matrixes of considrations are company size (>1000),founding year(<2000),,average revenue is (>3.500e+09)
+
+
+
+
+
+
+
+```{r}
+df_filtered <- top_companies[top_companies$Size == "10000+", ]
+
+# View the filtered data
+print(df_filtered)
+```
+
+
+
+```{r}
+path1 <- "C:/Users/tanzi/OneDrive/DATA/607/week6/tanzil_cheese_data.csv"
+write.csv(df_clean, path1)
+```
+
+
+
+Conclusion:Mr.X can join any of the two companies Roche with rating(4.1)	&	AstraZeneca(ratingn 4.0).Other than the experience Level & State all other variables are identical.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
